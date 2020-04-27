@@ -20,9 +20,8 @@ gem "minima", "~> 2.5"
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
 # gem "github-pages", group: :jekyll_plugins
 
-gem 'jekyll-assets'
 gem 'jekyll-postcss'
-gem 'autoprefixer-rails'
+
 
 gem "github-pages", "~> 204", group: :jekyll_plugins
 
