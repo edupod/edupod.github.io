@@ -1,1 +1,10 @@
-@font-face{font-family:'bahnschrift';src:url("https://ff.static.1001fonts.net/a/l/alte-din-1451-mittelschrift.regular.ttf")}p{font-family:'bahnschrift'}h1{font-family:'bahnschrift',sans-serif;color:#0c3c3f}div{color:#008183}b{color:#000}
+@import "node_modules/tailwindcss/base.css";
+
+@import "node_modules/tailwindcss/components.css";
+
+@import "node_modules/tailwindcss/utilities.css";
+@font-face {
+    font-family: Bahnschrift;
+    src: url(https://ff.static.1001fonts.net/a/l/alte-din-1451-mittelschrift.regular.ttf);
+}
+

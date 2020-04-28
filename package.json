@@ -1,0 +1,22 @@
+{
+  "name": "edupod",
+  "version": "1.0.0",
+  "description": "edupod - a student led nonprofit",
+  "main": "postcss.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EdupodEVHS/edupodevhs.github.io.git"
+  },
+  "author": "Sameer Iyengar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EdupodEVHS/edupodevhs.github.io/issues"
+  },
+  "homepage": "https://github.com/EdupodEVHS/edupodevhs.github.io#readme",
+  "dependencies": {
+    "tailwindcss": "^1.3.5"
+  }
+}
