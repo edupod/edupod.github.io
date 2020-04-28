@@ -5,8 +5,9 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'UA-164572552-1');
     gtag('set', {'user_id': 'USER_ID'}); // Set the user ID using signed-in user_id.
+    gtag('config', 'UA-164572552-1', {
+         'user_id': 'USER_ID'});
 </script>
 
 <head>
