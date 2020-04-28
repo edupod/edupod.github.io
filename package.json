@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/EdupodEVHS/edupodevhs.github.io#readme",
   "dependencies": {
-    "tailwindcss": "^1.3.5"
+    "tailwindcss": "^1.3.5",
+    "webpack": "^4.43.0"
   }
 }
