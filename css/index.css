@@ -12,6 +12,6 @@
 }
 
 h1 {
-    font-family: Bahnschrift, sans-serif;
-    src: url(https://ff.static.1001fonts.net/a/l/alte-din-1451-mittelschrift.regular.ttf);
+    font-family: Bahnschrift;
+    src: url("../fonts/bahnschrift.TTF");
 }
