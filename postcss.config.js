@@ -1,7 +1,10 @@
 // postcss.config.js
 
-module.exports = {
+mmodule.exports = {
     plugins: [
-        require("") // example of plugin you might use
+        // ...
+        require('tailwindcss'),
+        require('autoprefixer'),
+        // ...
     ]
 };

@@ -3,8 +3,18 @@
 @import "node_modules/tailwindcss/components.css";
 
 @import "node_modules/tailwindcss/utilities.css";
+
+
 @font-face {
     font-family: Bahnschrift;
-    src: url(https://ff.static.1001fonts.net/a/l/alte-din-1451-mittelschrift.regular.ttf);
+    src: url("fonts/BAHNSCHRIFT 11.ttf");
+}
+@font-face {
+    font-family: Barlow;
+    src: url("fonts/Barlow-Regular.ttf");
 }
 
+h1 {
+    font-family: Bahnschrift, sans-serif;
+    src: url(https://ff.static.1001fonts.net/a/l/alte-din-1451-mittelschrift.regular.ttf);
+}
