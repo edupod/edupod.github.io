@@ -1,4 +1,6 @@
 <!DOCTYPE HTML>
+<html>
+
 <!--html class="spectrum spectrum--medium spectrum--light" lang="html"-->
 <!-- Global site tag (gtag.js) - Google Analytics -->
 
@@ -11,33 +13,72 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-164572552-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
         gtag('js', new Date());
-        gtag('set', {'user_id': 'USER_ID'}); // Set the user ID using signed-in user_id.
+        gtag('set', {
+            'user_id': 'USER_ID'
+        }); // Set the user ID using signed-in user_id.
         gtag('config', 'UA-164572552-1', {
-            'user_id': 'USER_ID'});
+            'user_id': 'USER_ID'
+        });
     </script>
     <link rel="shortcut icon" type="image/png" href="images/favicon.png">
     <link rel="stylesheet" href="css/index.css">
 </head>
 
-<body class="bg-red" bgcolor=#5EA6B0>
-<header class="bg-teal">
-    <div>
-        <img src="images/croppedlogowmic.png" alt="edupod" width="100" height="100">
-    </div>
-    <div>
-        <button type="button" class="text-white hover:text-dteal focus:text-dteal focus:outline-none">☰</button>
-    </div>
-</header>
-<nav class="flex items-center justify-between flex-wrap bg-teal-500 p-6">
+<body class="bg-teal-800" bgcolor="#5EA6B0">
+    <header class="flex items-start bg-teal-900">
+        <div>
+            <img src="images/banner2.svg" alt="edupod" width="1366" height="300" class="h-8">
+        </div>
+        <div>
+            <?xml version="1.0" encoding="utf-8"?>
+            <!-- Generator: Adobe Illustrator 24.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+                <style type="text/css">
+                    .st0 {
+                        fill: #068284;
+                    }
+                </style>
+                <g>
+                    <g>
+                        <path class="st0" d="M21.48,2.43c-3.83,0-7.66,0-11.48,0c-1.31,0-2.56,1.15-2.5,2.5c0.06,1.35,1.1,2.5,2.5,2.5
+			c3.83,0,7.66,0,11.48,0c1.31,0,2.56-1.15,2.5-2.5C23.92,3.58,22.89,2.43,21.48,2.43L21.48,2.43z" />
+                    </g>
+                </g>
+                <g>
+                    <g>
+                        <path class="st0" d="M29,13.49c-8.67,0-17.33,0-26,0c-3.22,0-3.22,5,0,5c8.67,0,17.33,0,26,0C32.22,18.49,32.22,13.49,29,13.49
+			L29,13.49z" />
+                    </g>
+                </g>
+                <g>
+                    <g>
+                        <path class="st0" d="M21.87,24.49c-3.83,0-7.66,0-11.48,0c-1.31,0-2.56,1.15-2.5,2.5c0.06,1.35,1.1,2.5,2.5,2.5
+			c3.83,0,7.66,0,11.48,0c1.31,0,2.56-1.15,2.5-2.5C24.31,25.63,23.27,24.49,21.87,24.49L21.87,24.49z" />
+                    </g>
+                </g>
+            </svg>
+
+        </div>
+    </header>
+    <!--nav class="flex items-center justify-between flex-wrap bg-teal-500 p-6">
         <div class="w-auto flex items-center flex-shrink-0 text-white mr-6">
-            <svg class="fill-current h-8 w-8 mr-2" width="54" height="54" viewBox="0 0 54 54" xmlns="http://www.w3.org/2000/svg"><path d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z"/></svg>
+            <svg class="fill-current h-8 w-8 mr-2" width="54" height="54" viewBox="0 0 54 54" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z" />
+            </svg>
             <span class="font-semibold text-xl tracking-tight">Tailwind CSS</span>
         </div>
         <div class="block lg:hidden">
             <button class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
-                <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+                <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <title>Menu</title>
+                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+                </svg>
             </button>
         </div>
         <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
@@ -56,20 +97,22 @@
                 <a href="#" class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0">Download</a>
             </div>
         </div>
-    </nav>
-    <div class="new">
+    </!--nav--->
+    <!---div class="new">
         <template>
             <header>
                 <div>
-                <img src="/images/croppedlogowmic.png" alt="edupod">
+                    <img src="/images/croppedlogowmic.png" alt="edupod">
                 </div>
                 <div>
-                    <button type="button" class="text-white hover:text-dteal focus:text-dteal focus:outline-none">☰</button>
+                    <button type="button"
+                        class="text-white hover:text-dteal focus:text-dteal focus:outline-none">☰</button>
                 </div>
             </header>
         </template>
-    </div>
-        <h1 style="font-family: Bahnschrift,sans-serif">welcome!</h1>
+    </!---div--->
+    <h1 style="font-family: Bahnschrift,sans-serif">welcome!</h1>
     <p style="font-family: Barlow, sans-serif">this is edupod's new site, <b>watermarkless and adless</b>! ;&#93;</p>
 </body>
+
 </html>
