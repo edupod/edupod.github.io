@@ -1,9 +1,11 @@
-<!DOCTYPE html>
-<html class="spectrum spectrum--medium spectrum--light" lang="html">
+<!DOCTYPE HTML>
+<!--html class="spectrum spectrum--medium spectrum--light" lang="html"-->
 <!-- Global site tag (gtag.js) - Google Analytics -->
 
 <head>
+
     <title>edupod - a student-led nonprofit</title>
+    <meta charset="utf-8">
     <meta name="description" content="The official site of edupod - a student-led nonprofit based in San Jose,
     California." />
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-164572552-1"></script>
@@ -17,13 +19,19 @@
     </script>
     <link rel="shortcut icon" type="image/png" href="images/favicon.png">
     <link rel="stylesheet" href="css/index.css">
-
-    {% seo %}
 </head>
 
-<body bgcolor=#5EA6B0>
-    <nav class="flex items-center justify-between flex-wrap bg-teal-500 p-6">
-        <div class="flex items-center flex-shrink-0 text-white mr-6">
+<body class="bg-red" bgcolor=#5EA6B0>
+<header class="bg-teal">
+    <div>
+        <img src="images/croppedlogowmic.png" alt="edupod" width="100" height="100">
+    </div>
+    <div>
+        <button type="button" class="text-white hover:text-dteal focus:text-dteal focus:outline-none">☰</button>
+    </div>
+</header>
+<nav class="flex items-center justify-between flex-wrap bg-teal-500 p-6">
+        <div class="w-auto flex items-center flex-shrink-0 text-white mr-6">
             <svg class="fill-current h-8 w-8 mr-2" width="54" height="54" viewBox="0 0 54 54" xmlns="http://www.w3.org/2000/svg"><path d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z"/></svg>
             <span class="font-semibold text-xl tracking-tight">Tailwind CSS</span>
         </div>
@@ -50,6 +58,16 @@
         </div>
     </nav>
     <div class="new">
+        <template>
+            <header>
+                <div>
+                <img src="/images/croppedlogowmic.png" alt="edupod">
+                </div>
+                <div>
+                    <button type="button" class="text-white hover:text-dteal focus:text-dteal focus:outline-none">☰</button>
+                </div>
+            </header>
+        </template>
     </div>
         <h1 style="font-family: Bahnschrift,sans-serif">welcome!</h1>
     <p style="font-family: Barlow, sans-serif">this is edupod's new site, <b>watermarkless and adless</b>! ;&#93;</p>
