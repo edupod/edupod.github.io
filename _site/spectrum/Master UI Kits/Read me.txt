@@ -1,0 +1,26 @@
+//———————————————————————————————————————————————————————
+//
+// Master UI kits guidelines
+//
+//———————————————————————————————————————————————————————
+
+
+Spectrum is designed to serve seven platforms: UWP desktop (Windows), macOS, Web desktop, UWP mobile (Windows), iOS, Android, and Web nobile.
+
+Though we take into account platform conventions where necessary, we do organize these platforms into two major categories:
+
+
+
+DESKTOP SCALE (MEDIUM):
+
+- UWP desktop (Windows)
+- macOS
+- Web desktop
+
+
+MOBILE SCALE (LARGE):
+
+- UWP mobile (Windows)
+- iOS
+- Android
+- Web mobile

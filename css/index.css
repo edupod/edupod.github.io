@@ -1,13 +1,11 @@
-@import "../node_modules/tailwindcss/base.css";
-
-@import "../node_modules/tailwindcss/components.css";
-
-@import "../node_modules/tailwindcss/utilities.css";
-
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 @font-face {
     font-family: Bahnschrift;
     src: url("../fonts/bahnschrift.TTF");
 }
+
 @font-face {
     font-family: Barlow;
     src: url("../fonts/barlow.ttf");
