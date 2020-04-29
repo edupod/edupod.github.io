@@ -4,9 +4,7 @@
 <!-- Global site tag (gtag.js) - Google Analytics -->
 
 <head>
-    <script>
-        import "alpinejs";
-    </script>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 
     <title>edupod - a student-led nonprofit</title>
     <meta charset="utf-8" />
@@ -32,6 +30,11 @@
 </head>
 
 <body>
+    <div>
+        <button>Toggle</button>
+        <h1>test</h1>
+    </div>
+
     <header class="bg-lteal">
         <div class="flex items-center justify-between px-4 py-3">
             <div>
@@ -41,39 +44,46 @@
                 <button type="button" class="justify-center bg-teal-600"></button>
                 <img src=" images/ctrlogo.svg " class="justify-center" width=" 600 " height="90 " />
             </div>
-            <div class="justify-between">
-                <button type=" button " width=" 100 " height="100" class="block text-teal-800 hover:text-teal-900 px-20">
-            <img
-              src=" images/hmenu.svg "
-              alt=" meu "
-              height=" 100 "
-              width="100"
-              class="hover:text-black focus:bg-teal-600 fill-current"
-            />
-          </button>
-            </div>
+
+            <div x-data="{ isOpen: false }">
+                <div class="justify-between">
+                    <button @click=" isOpen = !isOpen" type=" button " width=" 100 " height="100" class="block text-teal-800 hover:text-teal-900 px-10">
+              <img
+                src=" images/hmenu.svg "
+                alt=" meu "
+                height=" 100 "
+                width="100"
+                class="hover:text-black focus:bg-teal-600 fill-current"
+              />
+            </button>
+                </div>
+                <ul x-show="isOpen" class="flex px-4 pt-3 pb-4 justify-between">
+                    <li>
+                        <a href="#" class="text-teal font-semibold text-center rounded-full px-2 hover:bg-teal-800">
+                what we do</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="text-teal font-semibold rounded-full px-2 text-center hover:bg-teal-800"
+              >
+                current topics</a
+              >
+            </li>
+            <a
+              href="#"
+              class="text-teal font-semibold rounded-full px-2 text-center hover:bg-teal-800"
+            >
+              who we are</a
+            >
+            <a
+              href="#"
+              class="text-teal font-semibold rounded-full px-2 text-center hover:bg-teal-800"
+              >about us</a
+            >
+          </ul>
         </div>
-        <div class="px-4 pt-3 pb-4">
-            <a href="#" class="text-teal font-semibold text-center rounded-full px-3 hover:bg-teal-800">
-          what we do</a
-        >
-        <a
-          href="#"
-          class="text-teal font-semibold rounded-full px-1 text-center hover:bg-teal-800"
-        >
-          current topics</a
-        >
-        <a
-          href="#"
-          class="text-teal font-semibold rounded-full px-1 text-center hover:bg-teal-800"
-        >
-          who we are</a
-        >
-        <a
-          href="#"
-          class="text-teal font-semibold rounded-full px-1 text-center hover:bg-teal-800"
-          >about us</a
-        >
       </div>
     </header>
     <div class="flex bg-"></div>
@@ -99,16 +109,16 @@
                 <a href=" #responsive-header " class=" block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4 ">
                     Docs
                 </a>
-            <a href=" #responsive-header " class=" block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4 ">
+                        <a href=" #responsive-header " class=" block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4 ">
                     Examples
                 </a>
-            <a href=" #responsive-header " class=" block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white ">
+                        <a href=" #responsive-header " class=" block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white ">
                     Blog
                 </a>
-        </div>
-        <div>
-            <a href=" # " class=" inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0 ">Download</a>
-        </div>
+            </div>
+            <div>
+                <a href=" # " class=" inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0 ">Download</a>
+            </div>
         </div>
         </!--nav--->
         <!---div class=" new ">
