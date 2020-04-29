@@ -4,7 +4,7 @@
 	 viewBox="0 0 1366 300" style="enable-background:new 0 0 1366 300;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#0F3C3F;}
-	.st1{fill:#068284;}
+	.st1{fill:#0C3C3F;}
 </style>
 <g>
 	<g>
@@ -1928,10 +1928,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAFynJ9VXcpXDLAAAAABJRU5ErkJggg==" transform="matrix(
 	</g>
 </g>
 <g>
-	<g>
-		<path class="st1" d="M376.8,21.21c0,33.73,0,67.45,0,101.18c0,33.55,0,67.11,0,100.66c0,18.93,0,37.86,0,56.78c0,3.22,5,3.22,5,0
-			c0-33.73,0-67.45,0-101.18c0-33.55,0-67.11,0-100.66c0-18.93,0-37.86,0-56.78C381.8,17.99,376.8,17.99,376.8,21.21L376.8,21.21z"
-			/>
-	</g>
+	<path class="st1" d="M379.3,21.21c0,86.21,0,172.41,0,258.62"/>
 </g>
 </svg>
