@@ -5,6 +5,7 @@ mmodule.exports = {
         // ...
         require('tailwindcss'),
         require('autoprefixer'),
+
         // ...
     ]
 };

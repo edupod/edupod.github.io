@@ -1,12 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 @font-face {
-    font-family: Bahnschrift;
-    src: url("../fonts/bahnschrift.TTF");
+  font-family: Bahnschrift;
+  src: url("../fonts/bahnschrift.TTF");
 }
 
 @font-face {
-    font-family: Barlow;
-    src: url("../fonts/barlow.ttf");
+  font-family: Barlow;
+  src: url("../fonts/barlow.ttf");
 }
