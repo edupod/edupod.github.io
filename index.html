@@ -28,63 +28,44 @@
         });
     </script>
     <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
-    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="style.css" />
 </head>
 
-<body class="bg-gray-800">
-    <header class="flex bg-teal-900">
-        <div x-data="{ isOpen: true }">
-            <button @click="  isOpen = !isOpen ">Toggle</button>
-            <h1 x-show="isOpen">index.html</h1>
-            <img src="images/banner2.svg" alt="edupod" height="300" class="h-6" />
+<body>
+    <header class="flex items-center justify-around bg-teal-800">
+        <div>
+            <img src="images/banner2.svg" alt="edupod" height="1000" width="1000" />
         </div>
         <div>
-            <button type=" button " class="text-teal-600 hover:text-teal-200">
-          <svg
-            width="300 "
-            length="300 "
-            class="h-6 w-4 fill-current"
-            version="1.1 "
-            id="Layer_1 "
-            xmlns="http://www.w3.org/2000/svg "
-            xmlns:xlink="http://www.w3.org/1999/xlink "
-            x="0px "
-            y="0px "
-            viewbox="0 0 32 32 "
-            style="enable-background: new 0 0 32 32;"
-            xml:space="preserve "
-          >
-            <style type="text/css ">
-              .st0 {
-                fill: #068284;
-              }
-            </style>
-            <g>
-              <g>
-                <path
-                  class="st0"
-                  d="M21.48,2.43c-3.83,0-7.66,0-11.48,0c-1.31,0-2.56,1.15-2.5,2.5c0.06,1.35,1.1,2.5,2.5,2.5 c3.83,0,7.66,0,11.48,0c1.31,0,2.56-1.15,2.5-2.5C23.92,3.58,22.89,2.43,21.48,2.43L21.48,2.43z "
-                />
-              </g>
-            </g>
-            <g>
-              <g>
-                <path
-                  class="st0"
-                  d="M29,13.49c-8.67,0-17.33,0-26,0c-3.22,0-3.22,5,0,5c8.67,0,17.33,0,26,0C32.22,18.49,32.22,13.49,29,13.49 L29,13.49z "
-                />
-              </g>
-            </g>
-            <g>
-              <g>
-                <path
-                  class="st0"
-                  d="M21.87,24.49c-3.83,0-7.66,0-11.48,0c-1.31,0-2.56,1.15-2.5,2.5c0.06,1.35,1.1,2.5,2.5,2.5 c3.83,0,7.66,0,11.48,0c1.31,0,2.56-1.15,2.5-2.5C24.31,25.63,23.27,24.49,21.87,24.49L21.87,24.49z "
-                />
-              </g>
-            </g>
-          </svg>
-        </button>
+            <button type="button" width="10%" height="10%" class="block text-teal-600 hover:text-teal-200">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 32 32"
+                    style="enable-background:new 0 0 32 32;" xml:space="preserve">
+                    <style type="text/css">
+                        .st0 {
+                            fill: #068284;
+                        }
+                    </style>
+                    <g>
+                        <g>
+                            <path class="st0" d="M21.48,2.43c-3.83,0-7.66,0-11.48,0c-1.31,0-2.56,1.15-2.5,2.5c0.06,1.35,1.1,2.5,2.5,2.5
+			                    c3.83,0,7.66,0,11.48,0c1.31,0,2.56-1.15,2.5-2.5C23.92,3.58,22.89,2.43,21.48,2.43L21.48,2.43z" />
+                        </g>
+                    </g>
+                    <g>
+                        <g>
+                            <path class="st0" d="M29,13.49c-8.67,0-17.33,0-26,0c-3.22,0-3.22,5,0,5c8.67,0,17.33,0,26,0C32.22,18.49,32.22,13.49,29,13.49
+		                	L29,13.49z" />
+                        </g>
+                    </g>
+                    <g>
+                        <g>
+                            <path class="st0" d="M21.87,24.49c-3.83,0-7.66,0-11.48,0c-1.31,0-2.56,1.15-2.5,2.5c0.06,1.35,1.1,2.5,2.5,2.5
+			                c3.83,0,7.66,0,11.48,0c1.31,0,2.56-1.15,2.5-2.5C24.31,25.63,23.27,24.49,21.87,24.49L21.87,24.49z" />
+                        </g>
+                    </g>
+                </svg>
+            </button>
         </div>
     </header>
     <!--nav class="flex items-center justify-between flex-wrap bg-teal-500 p-6 ">
