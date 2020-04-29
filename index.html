@@ -5,8 +5,9 @@
 
 <head>
     <script>
-        import "alpinejs";
+        import "node_modules/alpinejs";
     </script>
+
     <title>edupod - a student-led nonprofit</title>
     <meta charset="utf-8" />
     <meta name="description" content="The official site of edupod - a student-led nonprofit based in San Jose,
@@ -33,7 +34,7 @@
 <body class="bg-gray-800">
     <header class="flex bg-teal-900">
         <div x-data="{ isOpen: true }">
-            <button x-on:click="  isOpen = !isOpen ">Toggle</button>
+            <button @click="  isOpen = !isOpen ">Toggle</button>
             <h1 x-show="isOpen">index.html</h1>
             <img src="images/banner2.svg" alt="edupod" height="300" class="h-6" />
         </div>
