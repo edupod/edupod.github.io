@@ -30,11 +30,6 @@
 </head>
 
 <body>
-    <div>
-        <button>Toggle</button>
-        <h1>test</h1>
-    </div>
-
     <header class="bg-lteal">
         <div class="flex items-center justify-between px-4 py-3">
             <div>
@@ -57,29 +52,25 @@
               />
             </button>
                 </div>
-                <ul x-show="isOpen" class="flex px-4 pt-3 pb-4 justify-between">
+                <ul x-show="isOpen" class="absolute font-normal bg-white shadow overflow-hidden rounded w-48 border mt-2 py-1 right-0 z-20">
                     <li>
-                        <a href="#" class="text-teal font-semibold text-center rounded-full px-2 hover:bg-teal-800">
-                what we do</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="text-teal font-semibold rounded-full px-2 text-center hover:bg-teal-800"
-              >
+                        <a href="#" class="flex items-center block text-teal font-semibold text-center rounded-full px-2 hover:bg-teal-800">
+                         what we do</a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex items-center block text-teal font-semibold rounded-full px-2 text-center hover:bg-teal-800">
                 current topics</a
               >
             </li>
             <a
               href="#"
-              class="text-teal font-semibold rounded-full px-2 text-center hover:bg-teal-800"
+              class="flex items-center text-teal font-semibold rounded-full px-2 text-center hover:bg-teal-800"
             >
               who we are</a
             >
             <a
               href="#"
-              class="text-teal font-semibold rounded-full px-2 text-center hover:bg-teal-800"
+              class="flex items-center block text-teal font-semibold rounded-full px-2 text-center hover:bg-teal-800"
               >about us</a
             >
           </ul>
