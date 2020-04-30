@@ -33,11 +33,11 @@
     <header class="bg-lteal">
         <div class="flex items-center justify-between px-4 py-3">
             <div>
-                <img src="images/LogoMic.svg" alt=" edupod " height=" 150 " width=" 150 " class="fill-current" />
+                <img src="images/LogoMic.svg" alt=" edupod " height=" 150 " width=" 150 " class="fill-current rounded-full hover:bg-teal-800" />
             </div>
             <div>
                 <button type="button" class="justify-center bg-teal-600"></button>
-                <img src=" images/ctrlogo.svg " class="justify-center" width=" 600 " height="90 " />
+                <img src="images/ctrlogonopill.svg" class="justify-center hover:bg-teal-800 rounded-full" width=" 600 " height="90 " />
             </div>
 
             <div x-data="{ isOpen: false }">
@@ -48,29 +48,29 @@
                 alt=" meu "
                 height=" 100 "
                 width="100"
-                class="hover:text-black focus:bg-teal-600 fill-current"
+                class="hover:bg-teal-900 focus:bg-teal-600 px-2 py-2 fill-current border-2 border-teal-900 focus:border-teal-700 rounded-full overflow-hidden"
               />
             </button>
                 </div>
-                <ul x-show="isOpen" class="absolute font-normal bg-white shadow overflow-hidden rounded w-48 border mt-2 py-1 right-0 z-20">
+                <ul x-show="isOpen" class="absolute justify-center font-normal bg-white shadow overflow-hidden rounded w-48 border mt-2 py-1 px-2 right-0 z-20">
                     <li>
-                        <a href="#" class="flex items-center block text-teal font-semibold text-center rounded-full px-2 hover:bg-teal-800">
+                        <a href="#" class="flex items-center justify-center block text-teal font-semibold text-center rounded-full px-2 hover:bg-teal-800">
                          what we do</a>
                     </li>
                     <li>
-                        <a href="#" class="flex items-center block text-teal font-semibold rounded-full px-2 text-center hover:bg-teal-800">
+                        <a href="#" class="flex items-center justify-center block text-teal font-semibold rounded-full px-2 text-center hover:bg-teal-800">
                 current topics</a
               >
             </li>
             <a
               href="#"
-              class="flex items-center text-teal font-semibold rounded-full px-2 text-center hover:bg-teal-800"
+              class="flex items-center text-teal font-semibold justify-center rounded-full px-2 text-center hover:bg-teal-800"
             >
               who we are</a
             >
             <a
               href="#"
-              class="flex items-center block text-teal font-semibold rounded-full px-2 text-center hover:bg-teal-800"
+              class="flex items-center block text-teal font-semibold justify-center rounded-full px-2 text-center hover:bg-teal-800"
               >about us</a
             >
           </ul>
