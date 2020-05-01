@@ -19,7 +19,7 @@ module.exports = {
         extend: {
             colors: {
                 baseteal: '#9cdbff',
-                dteal: '5EA6B0',
+                dlteal: '#4796a1',
                 lteal: '#5EA6B0',
                 backgroundColor: theme => ({
                     'primary': '#5EA6B0',

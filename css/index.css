@@ -12,6 +12,10 @@
   src: url("../fonts/barlow.ttf");
 }
 
-#lteal {
+.lteal {
   color: #5ea6b0;
+}
+
+.dlteal {
+  color:#4796a1
 }
