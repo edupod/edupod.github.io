@@ -31,10 +31,10 @@
 </head>
 
 <body>
-    <header class="bg-dteal">
+    <header class="bg-dteal shadow-xl">
         <div class="flex items-center justify-between px-4 py-3">
             <div>
-                <img src="images/LogoMic.svg" alt=" edupod " height=" 150 " width=" 150 " class="fill-current rounded-full hover:bg-teal-800" />
+                <img src="images/LogoMic.svg" alt=" edupod " height=" 150 " width=" 150 " class="fill-current rounded-full hover:bg-teal-800 rounded-full border-2 shadow-xl border-teal-900" />
             </div>
             <div>
                 <button type="button" class="justify-center bg-teal-600"></button>
@@ -44,39 +44,26 @@
             <div x-data="{ isOpen: false }">
                 <div class="justify-between">
                     <button @click=" isOpen = !isOpen" type=" button " width=" 100 " height="100" class="block text-teal-800 hover:text-teal-900 px-10">
-              <img
-                src=" images/hmenu.svg "
-                alt=" meu "
-                height=" 100 "
-                width="100"
-                class="hover:bg-teal-900 focus:bg-teal-600 px-2 py-2 fill-current shadow-xl border-2 border-teal-900 focus:border-teal-700 rounded-full overflow-hidden"
-              />
-            </button>
+                        <img src=" images/hmenu.svg " alt=" meu " height="100 " width="100"
+                            class="hover:bg-teal-900 focus:bg-teal-600 px-2 py-2 fill-current shadow-xl border-2 border-teal-900 focus:border-teal-700 rounded-full overflow-hidden" />
+                    </button>
                 </div>
                 <ul x-show="isOpen" class="absolute justify-center font-normal bg-white shadow overflow-hidden rounded w-48 border mt-2 py-1 px-2 right-0 z-20">
                     <li>
                         <a href="#" class="flex items-center justify-center block text-teal font-semibold text-center rounded-full px-2 hover:bg-teal-800">
-                         what we do</a>
+                            what we do</a>
                     </li>
                     <li>
                         <a href="#" class="flex items-center justify-center block text-teal font-semibold rounded-full px-2 text-center hover:bg-teal-800">
-                current topics</a
-              >
-            </li>
-            <a
-              href="#"
-              class="flex items-center text-teal font-semibold justify-center rounded-full px-2 text-center hover:bg-teal-800"
-            >
-              who we are</a
-            >
-            <a
-              href="#"
-              class="flex items-center block text-teal font-semibold justify-center rounded-full px-2 text-center hover:bg-teal-800"
-              >about us</a
-            >
-          </ul>
+                            current topics</a>
+                    </li>
+                    <a href="#" class="flex items-center text-teal font-semibold justify-center rounded-full px-2 text-center hover:bg-teal-800">
+                        who we are</a>
+                    <a href="#" class="flex items-center block text-teal font-semibold justify-center rounded-full px-2 text-center hover:bg-teal-800">about
+                        us</a>
+                </ul>
+            </div>
         </div>
-      </div>
     </header>
     <div class="flex bg-"></div>
     <!--nav class=" flex items-center justify-between flex-wrap bg-teal-500 p-6 ">
@@ -113,7 +100,7 @@
             </div>
         </div>
         </!--nav--->
-        <!---div class=" new ">
+    <!---div class=" new ">
         <template>
             <header>
                 <div>
@@ -126,10 +113,10 @@
             </header>
         </template>
     </!---div--->
-        <h1 style="font-family: Bahnschrift, sans-serif;">welcome!</h1>
-        <p style="font-family: Barlow, sans-serif;">
-            this is edupod's new site, <b>watermarkless and adless</b>! ;&#93;
-        </p>
+    <h1 style="font-family: Bahnschrift, sans-serif;">welcome!</h1>
+    <p style="font-family: Barlow, sans-serif;">
+        this is edupod's new site, <b>watermarkless and adless</b>! ;&#93;
+    </p>
 </body>
 
 </html>
