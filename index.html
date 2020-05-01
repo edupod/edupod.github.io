@@ -8,8 +8,9 @@
 
     <title>edupod - a student-led nonprofit</title>
     <meta charset="utf-8" />
-    <meta name="description" content="The official site of edupod - a student-led nonprofit based in San Jose,
-    California." />
+    <meta name="description" content="The official site of edupod - a
+            student-led nonprofit based in San Jose,
+            California." />
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-164572552-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -31,92 +32,79 @@
 </head>
 
 <body>
-    <header class="bg-dteal shadow-xl">
-        <div class="flex items-center justify-between px-4 py-3">
-            <div>
-                <img src="images/LogoMic.svg" alt=" edupod " height=" 150 " width=" 150 " class="fill-current rounded-full hover:bg-teal-800 rounded-full border-2 shadow-xl border-teal-900" />
-            </div>
-            <div>
-                <button type="button" class="justify-center bg-teal-600"></button>
-                <img src="images/ctrlogonopill.svg" class="shadow-xl mb-5 justify-center hover:bg-teal-800 rounded-full border-2 border-teal-900" width=" 600 " height="90 " />
-            </div>
+    <div>
+        <header class="bg-lteal shadow-xl">
+            <div class="flex items-center justify-between px-4 py-3">
+                <div>
+                    <img src="images/LogoMic.svg" alt="edupod" height="150" width="150" class="fill-current
+                            rounded-full hover:bg-teal-800 rounded-full border-2
+                            shadow-2xl border-teal-900" />
+                </div>
+                <div class="justify-center">
+                    <button type="button" class="transition
+                            duration-250 bg-teal-600
+                            hover:bg-teal-800"></button>
+                    <img src="images/ctrlogonopill.svg" class="shadow-2xl
+                            mb-5
+                            justify-center rounded-full
+                            border-2
+                            border-teal-900" width="600" height="90" />
+                </div>
 
-            <div x-data="{ isOpen: false }">
-                <div class="justify-between">
-                    <button @click=" isOpen = !isOpen" type=" button " width=" 100 " height="100" class="block text-teal-800 hover:text-teal-900 px-10">
-                        <img src=" images/hmenu.svg " alt=" meu " height="100 " width="100"
-                            class="hover:bg-teal-900 focus:bg-teal-600 px-2 py-2 fill-current shadow-xl border-2 border-teal-900 focus:border-teal-700 rounded-full overflow-hidden" />
-                    </button>
+                <div x-data="{ isOpen: false }">
+                    <div class="justify-between">
+                        <button @click="isOpen= !isOpen" type="button" width="100" height="100" class="block
+                                text-teal-800
+                                hover:text-teal-900
+                                px-10">
+                                <img src="images/hmenu.svg" alt="meu"
+                                    height="100"
+                                    width="100"
+                                    class="hover:bg-teal-900 focus:bg-teal-600
+                                    px-2
+                                    py-2 fill-current shadow-2xl border-2
+                                    border-teal-900 focus:border-teal-700
+                                    rounded-full overflow-hidden" />
+                            </button>
+                    </div>
+                    <ul x-show="isOpen" class="absolute justify-center
+                            font-normal bg-white shadow overflow-hidden rounded
+                            w-48
+                            border mt-2 py-1 px-2 right-0 z-20">
+                        <li>
+                            <a href="#" class="flex items-center
+                                    justify-center
+                                    block text-teal font-semibold text-center
+                                    rounded-full px-2 hover:bg-teal-800">
+                                    what we do</a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex items-center
+                                    justify-center
+                                    block text-teal font-semibold rounded-full
+                                    px-2
+                                    text-center hover:bg-teal-800">
+                                    current topics</a>
+                        </li>
+                        <a href="#" class="flex items-center text-teal
+                                font-semibold justify-center rounded-full px-2
+                                text-center hover:bg-teal-800">
+                                who we are</a>
+                        <a href="#" class="flex items-center block text-teal
+                                font-semibold justify-center rounded-full px-2
+                                text-center hover:bg-teal-800">about
+                                us</a>
+                    </ul>
                 </div>
-                <ul x-show="isOpen" class="absolute justify-center font-normal bg-white shadow overflow-hidden rounded w-48 border mt-2 py-1 px-2 right-0 z-20">
-                    <li>
-                        <a href="#" class="flex items-center justify-center block text-teal font-semibold text-center rounded-full px-2 hover:bg-teal-800">
-                            what we do</a>
-                    </li>
-                    <li>
-                        <a href="#" class="flex items-center justify-center block text-teal font-semibold rounded-full px-2 text-center hover:bg-teal-800">
-                            current topics</a>
-                    </li>
-                    <a href="#" class="flex items-center text-teal font-semibold justify-center rounded-full px-2 text-center hover:bg-teal-800">
-                        who we are</a>
-                    <a href="#" class="flex items-center block text-teal font-semibold justify-center rounded-full px-2 text-center hover:bg-teal-800">about
-                        us</a>
-                </ul>
             </div>
+        </header>
+        <div class="flex bg-dlteal width:100%">
+            <h1 style="font-family: Bahnschrift, sans-serif;">welcome!</h1>
+            <p style="font-family: Barlow, sans-serif;">
+                this is edupod's new site, <b>watermarkless and adless</b>! ;&#93;
+            </p>
         </div>
-    </header>
-    <div class="flex bg-"></div>
-    <!--nav class=" flex items-center justify-between flex-wrap bg-teal-500 p-6 ">
-        <div class=" w-auto flex items-center flex-shrink-0 text-white mr-6 ">
-            <svg class=" fill-current h-8 w-8 mr-2 " width=" 54 " height=" 54 " viewBox=" 0 0 54 54 " xmlns=" http://www.w3.org/2000/svg ">
-                <path
-                    d=" M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55
-        9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z " />
-            </svg>
-            <span class=" font-semibold text-xl tracking-tight ">Tailwind CSS</span>
-        </div>
-        <div class=" block lg:hidden ">
-            <button class=" flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white ">
-                <svg class=" fill-current h-3 w-3 " viewBox=" 0 0 20 20 " xmlns=" http://www.w3.org/2000/svg ">
-                    <title>Menu</title>
-                    <path d=" M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z " />
-                </svg>
-            </button>
-        </div>
-        <div class=" w-full block flex-grow lg:flex lg:items-center lg:w-auto ">
-            <div class=" text-sm lg:flex-grow ">
-                <a href=" #responsive-header " class=" block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4 ">
-                    Docs
-                </a>
-                        <a href=" #responsive-header " class=" block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4 ">
-                    Examples
-                </a>
-                        <a href=" #responsive-header " class=" block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white ">
-                    Blog
-                </a>
-            </div>
-            <div>
-                <a href=" # " class=" inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0 ">Download</a>
-            </div>
-        </div>
-        </!--nav--->
-    <!---div class=" new ">
-        <template>
-            <header>
-                <div>
-                    <img src="/images/croppedlogowmic.png " alt=" edupod ">
-                </div>
-                <div>
-                    <button type=" button "
-                        class=" text-white hover:text-dteal focus:text-dteal focus:outline-none ">☰</button>
-                </div>
-            </header>
-        </template>
-    </!---div--->
-    <h1 style="font-family: Bahnschrift, sans-serif;">welcome!</h1>
-    <p style="font-family: Barlow, sans-serif;">
-        this is edupod's new site, <b>watermarkless and adless</b>! ;&#93;
-    </p>
+    </div>
 </body>
 
 </html>
