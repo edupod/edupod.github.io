@@ -33,22 +33,24 @@
 
 <body>
     <div>
-        <header class="bg-lteal shadow-2xl">
+        <header class="bg-lteal shadow-xl">
             <div class="flex items-center justify-between px-4 py-3">
                 <div>
                     <img src="images/LogoMic.svg" alt="edupod" height="150" width="150" class="fill-current
-                            rounded-full hover:bg-teal-800 rounded-full border-2
+                            rounded-full transition duration-500 ease-in-out
+                            bg-lteal hover:bg-teal-800 rounded-full border-2
                             shadow-2xl border-teal-900" />
                 </div>
                 <div class="justify-center">
-                    <button type="button" class="transition
-                            duration-250 ease-in-out bg-teal-600
+                    <button type="button" class="bg-teal-600
                             hover:bg-teal-800"></button>
                     <img src="images/ctrlogonopill.svg" class="shadow-2xl
                             mb-5
                             justify-center rounded-full
                             border-2
-                            border-teal-900" width="600" height="90" />
+                            border-teal-900
+                            transition duration-500 ease-in-out bg-lteal
+                            hover:bg-teal-800" width="600" height="90" />
                 </div>
                 <div x-data="{ isOpen: false }">
                     <div class="justify-between">
@@ -59,7 +61,8 @@
                                 <img src="images/hmenu.svg" alt="meu"
                                     height="100"
                                     width="100"
-                                    class="hover:bg-teal-900 focus:bg-teal-600
+                                    class="transition duration-500 ease-in-out
+                                    bg-lteal hover:bg-teal-900 focus:bg-teal-600
                                     px-2
                                     py-2 fill-current shadow-2xl border-2
                                     border-teal-900 focus:border-teal-700
