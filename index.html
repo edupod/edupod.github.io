@@ -54,7 +54,7 @@
                 </div>
                 <div x-data="{ isOpen: false }">
                     <div class="justify-between">
-                        <button @click="isOpen= !isOpen" type="button" width="100" height="100" class="block
+                        <button @click="isOpen= !isOpen" @keydown.escape="isOpen=false" type="button" width="100" height="100" class="block
                                 text-teal-800
                                 hover:text-teal-900
                                 px-10">
@@ -69,7 +69,7 @@
                                     rounded-full overflow-hidden" />
                             </button>
                     </div>
-                    <ul x-show="isOpen" class="absolute justify-center
+                    <ul x-show="isOpen" @click.away="isOpen= false" class="absolute justify-center
                             font-normal bg-white shadow overflow-hidden rounded
                             w-48
                             border mt-2 py-1 px-2 right-0 z-20">
