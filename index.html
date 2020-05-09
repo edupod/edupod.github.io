@@ -32,7 +32,7 @@
 </head>
 
 <body>
-    <div>
+    <div x-data="{ isOpen: false }">
         <header class="bg-lteal shadow-xl">
             <div class="flex items-center justify-between px-4 py-3">
                 <div>
@@ -52,22 +52,19 @@
                             transition duration-500 ease-in-out bg-lteal
                             hover:bg-teal-800" width="600" height="90" />
                 </div>
-                <div x-data="{ isOpen: false }">
+                <div>
                     <div class="justify-between">
                         <button @click="isOpen= !isOpen" @keydown.escape="isOpen=false" type="button" width="100" height="100" class="block
                                 text-teal-800
                                 hover:text-teal-900
                                 px-10">
-                                <img src="images/hmenu.svg" alt="meu"
-                                    height="100"
-                                    width="100"
-                                    class="transition duration-500 ease-in-out
+                            <img src="images/hmenu.svg" alt="meu" height="100" width="100" class="transition duration-500 ease-in-out
                                     bg-lteal hover:bg-teal-900 focus:bg-teal-600
                                     px-2
                                     py-2 fill-current shadow-2xl border-2
                                     border-teal-900 focus:border-teal-700
                                     rounded-full overflow-hidden" />
-                            </button>
+                        </button>
                     </div>
                     <ul x-show="isOpen" @click.away="isOpen= false" class="absolute justify-center
                             font-normal bg-white shadow overflow-hidden rounded
@@ -78,7 +75,7 @@
                                     justify-center
                                     block text-teal font-semibold text-center
                                     rounded-full px-2 hover:bg-teal-800">
-                                    what we do</a>
+                                what we do</a>
                         </li>
                         <li>
                             <a href="#" class="flex items-center
@@ -86,20 +83,23 @@
                                     block text-teal font-semibold rounded-full
                                     px-2
                                     text-center hover:bg-teal-800">
-                                    current topics</a>
+                                current topics</a>
                         </li>
                         <a href="#" class="flex items-center text-teal
                                 font-semibold justify-center rounded-full px-2
                                 text-center hover:bg-teal-800">
-                                who we are</a>
+                            who we are</a>
                         <a href="#" class="flex items-center block text-teal
                                 font-semibold justify-center rounded-full px-2
                                 text-center hover:bg-teal-800">about
-                                us</a>
+                            us</a>
                     </ul>
                 </div>
             </div>
         </header>
+        <div class="sidebar">
+
+        </div>
         <div class="flex bg-dlteal width:100%">
             <h1 style="font-family: Bahnschrift, sans-serif;">welcome!</h1>
             <p style="font-family: Barlow, sans-serif;">
