@@ -97,8 +97,9 @@
                 </div>
             </div>
         </header>
-        <div class="sidebar">
 
+        <div class="sidebar w-64 h-full" x-show="isOpen" @click.away="isOpen= false">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         </div>
         <div class="flex bg-dlteal width:100%">
             <h1 style="font-family: Bahnschrift, sans-serif;">welcome!</h1>
