@@ -54,49 +54,7 @@
                 </div>
                 <div>
                     <div class="justify-between">
-                        <nav class="container mx-auto px-4 flex items-center justify-between py-4" x-data="{ isOpen: false }">
-                            <!-- div class="flex">
-                                <button @click="isOpen= !isOpen" @keydown.escape="isOpen=false" type="button" width="100" height="100" class="block
-                                            text-teal-800
-                                       hover:text-teal-900
-                                          px-10">
-                                    <img src="images/hmenu.svg" alt="menu" height="100" width="100" class="transition duration-500 ease-in-out
-                                    bg-lteal hover:bg-teal-900 focus:bg-teal-600
-                                    px-2
-                                    py-2 fill-current shadow-2xl border-2
-                                    border-teal-900 focus:border-teal-700
-                                    rounded-full overflow-hidden" />
-                                </button>
-                            </!-->
-                            <div class="absolute top-0 right-0 bg-lteal border-2 border-teal h-full w-1/5 rounded-md justify-center">
-                                <div class="flex justify-center">
-                                    <button class="text-2xl mr-3 mt-1"><img src="images/closemenu.svg" /> </button>
-                                </div>
-                                <ul class="py-60">
-                                    <li class="py-10">
-                                        <a href="#" style="font-size:xx-large; font-family: Bahnschrift, sans-serif;" class="justify-center flex items-center px-3 py-3 transition duration:500 ease-in-out hover:bg-teal-800 rounded-full">
-                                            <span class="ml-2">about us</span>
-                                        </a>
-                                    </li>
-                                    <li class="py-10">
-                                        <a href="#" style="font-size:xx-large; font-family: Bahnschrift, sans-serif;" class="justify-center flex items-center px-3 py-3 transition duration:500 ease-in-out hover:bg-teal-800 rounded-full">
-                                            <span class="ml-2">what we do</span>
-                                        </a>
-                                    </li>
-                                    <li class="py-10">
-                                        <a href="#" style="font-size:xx-large; font-family: Bahnschrift, sans-serif;" class="justify-center flex items-center px-3 py-3 transition duration:500 ease-in-out hover:bg-teal-800 rounded-full">
-                                            <span class="ml-2">current topic</span>
-                                        </a>
-                                    </li>
-                                    <li class="py-10">
-                                        <a href="#" style="font-size:xx-large; font-family: Bahnschrift, sans-serif;" class="justify-center flex items-center px-3 py-3 transition duration:500 ease-in-out hover:bg-teal-800 rounded-full">
-                                            <span class="ml-2">how you can help</span>
-                                        </a>
-                                    </li>
 
-                                </ul>
-                            </div>
-                        </nav>
                     </div>
                     <ul x-show="isOpen" @click.away="isOpen= false" class="absolute justify-center
                             font-normal bg-white shadow overflow-hidden rounded
@@ -129,19 +87,6 @@
                 </div>
             </div>
         </header>
-        <script>
-            onclick(() => {
-                console.log('hello')
-                document.querySelector('#menu').classList.toggle('-translate-x-full')
-            }, 2000)
-        </script>
-
-        <div class="flex bg-dlteal width:100% topo">
-            <h1 style="font-family: Bahnschrift, sans-serif;">welcome!</h1>
-            <p style="font-family: Barlow, sans-serif;">
-                this is edupod's new site, <b>watermarkless and adless</b>! ;&#93;
-            </p>
-        </div>
     </div>
 </body>
 
