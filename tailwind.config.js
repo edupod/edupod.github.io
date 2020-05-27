@@ -21,6 +21,8 @@ module.exports = {
                 baseteal: '#9cdbff',
                 dlteal: '#4796a1',
                 lteal: '#5EA6B0',
+                textteal: '#0C3C3F',
+                ddteal: '#003333',
                 backgroundColor: theme => ({
                     'primary': '#5EA6B0',
                     'secondary': '#ffed4a',

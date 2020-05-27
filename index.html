@@ -32,61 +32,93 @@
 </head>
 
 <body>
-    <div x-data="{ isOpen: false }">
-        <header class="bg-lteal shadow-xl">
-            <div class="flex items-center justify-between px-4 py-3">
-                <div>
-                    <img src="images/LogoMic.svg" alt="edupod" height="150" width="150" class="fill-current
-                            rounded-full transition duration-500 ease-in-out
-                            bg-lteal hover:bg-teal-800 rounded-full border-2
-                            shadow-2xl border-teal-900" />
-                </div>
-                <div class="justify-center">
-                    <button type="button" class="bg-teal-600
-                            hover:bg-teal-800"></button>
-                    <img src="images/ctrlogonopill.svg" class="shadow-2xl
-                            mb-5
-                            justify-center rounded-full
+    <div class="w-full">
+        <header class="flex justify-between bg-lteal shadow-xl items-center
+                p-2">
+            <div class="flex items-center px-4 py-3 block w-32" height="150" width="150">
+                <img src="images/LogoMic.svg" alt="edupod" height="150" width="150" class="rounded-full transition duration-500
+                        ease-in-out
+                        bg-lteal hover:bg-teal-800 rounded-full border-2
+                        shadow-2xl border-teal-900" />
+            </div>
+            <div class="flex items-center w-auto mx-auto">
+                <button type="button" class="bg-teal-600
+                        hover:bg-teal-800"><a
+                            href="/edupodevhs.github.io/index.html" /></button>
+                <img src="images/ctrlogonopillsm.svg" class="shadow-2xl
+                            rounded-full
                             border-2
                             border-teal-900
                             transition duration-500 ease-in-out bg-lteal
-                            hover:bg-teal-800" width="600" height="90" />
-                </div>
-                <div>
-                    <div class="justify-between">
-
-                    </div>
-                    <ul x-show="isOpen" @click.away="isOpen= false" class="absolute justify-center
-                            font-normal bg-white shadow overflow-hidden rounded
-                            w-48
-                            border mt-2 py-1 px-2 right-0 z-20">
-                        <li>
-                            <a href="#" class="flex items-center
-                                    justify-center
-                                    block text-teal font-semibold text-center
-                                    rounded-full px-2 hover:bg-teal-800">
-                                what we do</a>
-                        </li>
-                        <li>
-                            <a href="#" class="flex items-center
-                                    justify-center
-                                    block text-teal font-semibold rounded-full
-                                    px-2
-                                    text-center hover:bg-teal-800">
-                                current topics</a>
-                        </li>
-                        <a href="#" class="flex items-center text-teal
-                                font-semibold justify-center rounded-full px-2
-                                text-center hover:bg-teal-800">
-                            who we are</a>
-                        <a href="#" class="flex items-center block text-teal
-                                font-semibold justify-center rounded-full px-2
-                                text-center hover:bg-teal-800">about
-                            us</a>
-                    </ul>
-                </div>
+                            hover:bg-teal-800" width="300" height="45" />
+            </div>
+            <div class="flex container
+                        items-center px-20 py-20 justify-center">
+                <div class="p-2 justify-between items-center"></div>
+                <button class="px-1" type="button" href="twitter.com"><img
+                                src="images/twtr.svg" height="32"
+                                width="32"></button>
+                <button class="px-1" type="button" href="instagram.com"><img
+                                src="images/inst.svg" height="32" width="32"></button>
+                <button class="px-1" type="button" href="facebook.com"><img
+                                src="images/fcbk.svg" height="32" width="32"></button>
             </div>
         </header>
+    </div>
+    <nav class="flex justify-center bg-dlteal p-2 fixed w-full
+                fixed">
+        <div class="justify-center mx-auto flex flex-wrap
+                    items-center">
+            <div class="flex w-full pt-2 content-center
+                        justify-center md:justify-center">
+                <ul class="list-reset flex justify-center
+                            flex-1 md:flex-none items-center">
+                    <li class="mr-3">
+                        <a class="flex justify-center inline-block
+                                    rounded-full border-2
+                                    px-3 py-3 border-teal-900 text-ddteal
+                                    shadow-xl transition duration-500
+                                    ease-in-out bg-lteal
+                                    hover:bg-teal-800" href="#whatwedo"><strong>what
+                                        we do</strong></a>
+                    </li>
+                    <li class="mr-3">
+                        <a class="flex justify-center inline-block
+                                    rounded-full border-2
+                                    px-3 py-3 border-teal-900 text-ddteal
+                                    shadow-xl transition duration-500
+                                    ease-in-out bg-lteal
+                                    hover:bg-teal-800" href="#disease"><strong>current
+                                        disease
+                                        topic</strong></a>
+                    </li>
+                    <li class="mr-3">
+                        <a class="flex justify-center inline-block
+                                    rounded-full border-2
+                                    px-3 py-3 border-teal-900 text-ddteal
+                                    shadow-xl transition duration-500
+                                    ease-in-out bg-lteal
+                                    hover:bg-teal-800" href="#team"><strong>meet
+                                        the
+                                        team
+                                    </strong></a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <!--ul class="list-reset flex
+                    flex-1 md:flex-end items-center">
+            <li class="mr-3">
+                <a class="flex inline-block
+                            rounded-full border-2
+                            px-3 py-3 border-teal-900 text-ddteal" href="#">to
+                            top</a>
+            </li>
+        </ul-->
+    </nav>
+    <div class="justify-center bg-teal-600 w-full h-full">
+        <p class=""></p>
     </div>
 </body>
 
