@@ -1,0 +1,2 @@
+class Edublog < ApplicationRecord
+end
