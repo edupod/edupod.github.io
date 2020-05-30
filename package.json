@@ -1,16 +1,21 @@
 {
-  "name": "edupodevhs_github_io",
-  "private": true,
-  "dependencies": {
-    "@rails/actioncable": "^6.0.0",
-    "@rails/activestorage": "^6.0.0",
-    "@rails/ujs": "^6.0.0",
-    "@rails/webpacker": "4.2.2",
-    "turbolinks": "^5.2.0",
-    "yarn": "^1.22.4"
-  },
-  "version": "0.1.0",
-  "devDependencies": {
-    "webpack-dev-server": "^3.11.0"
-  }
+    "name": "edupodevhs_github_io",
+    "private": true,
+    "dependencies": {
+        "@rails/actioncable": "^6.0.0",
+        "@rails/activestorage": "^6.0.0",
+        "@rails/ujs": "^6.0.0",
+        "@rails/webpacker": "4.2.2",
+        "tailwind": "^4.0.0",
+        "tailwindcss": "^1.4.6",
+        "turbolinks": "^5.2.0",
+        "yarn": "^1.22.4"
+    },
+    "scripts": {
+        "build": "tailwind build css/index.css -o style.css"
+    },
+    "version": "0.1.0",
+    "devDependencies": {
+        "webpack-dev-server": "^3.11.0"
+    }
 }

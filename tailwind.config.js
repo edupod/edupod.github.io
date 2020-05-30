@@ -9,6 +9,7 @@ module.exports = {
         fontFamily: {
             display: ['Bahnschrift', 'sans-serif'],
             body: ['Barlow', 'sans-serif'],
+            h1: ['Barlow', 'sans-serif', 'bold-700']
         },
         borderWidth: {
             default: '1px',
