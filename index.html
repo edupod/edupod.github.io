@@ -5,7 +5,28 @@
 
 <head>
     <!--load jQuery-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#facebook').on('click', function() {
+                window.open('https://www.facebook.com/edupod.organization', '_blank');
+                console.log("opened facebook link");
+            });
+        });
+        $(document).ready(function() {
+            $('#twitter').on('click', function() {
+                window.open('https://twitter.com', '_blank');
+                console.log("opened twitter link");
+            });
+        });
+        $(document).ready(function() {
+            $('#instagram').on('click', function() {
+                window.open('https://www.instagram.com/edupod.organization/', '_blank');
+                console.log("opened instagram link");
+            });
+        });
+    </script>
+
     <title>edupod - a student-led nonprofit</title>
     <meta charset="utf-8" />
     <meta name="description" content="The official site of edupod - a
@@ -44,16 +65,18 @@
             <div class="flex items-center w-auto ml-8">
                 <button type=" button " class="bg-teal-600 hover:bg-teal-800 "><a
                         href="/edupodevhs.github.io/index.html " /></button>
-                <img src="images/ctrlogonopillsm.svg " class="shadow-2xl rounded-full border-2 border-teal-900 transition duration-500 ease-in-out bg-lteal hover:bg-teal-800 " width="300 " height="45 " />
+                <img title="home page" src="images/ctrlogonopillsm.svg " class="shadow-2xl rounded-full border-2 border-teal-900 transition duration-500 ease-in-out bg-lteal hover:bg-teal-800 " width="300 " height="45 " />
             </div>
-            <div class="flex container items-center py-20 justify-center space-x-1 ">
+            <div class="flex container items-center py-20 justify-center space-x-1">
                 <div class="p-2 justify-between "></div>
-                <button class="px-3 py-2 rounded-full border-2 border-teal-900 transition duration-500 ease-in-out hover:bg-teal-800 " type="button " href="https://twitter.com "><img src="images/twtr.svg " class="py-1 " height="32 "
-                        width="32 "></button>
-                <button class="px-3 py-2 rounded-full border-2 border-teal-900 transition duration-500 ease-in-out hover:bg-teal-800 " type="button " href="instagram.com "><img src="images/inst.svg " class="py-1 " height="32 "
-                        width="32 "></button>
-                <button class="px-3 py-2 rounded-full border-2 border-teal-900 transition duration-500 ease-in-out hover:bg-teal-800 " type="button " href="facebook.com "><img src="images/fcbk.svg " class="py-1 " height="32 "
-                        width="32 "></button>
+                <button name="twitter" class="shadow-2xl px-3 py-2 rounded-full border-2 border-teal-900 transition duration-500 ease-in-out hover:bg-teal-800 " type="button ">
+                <img src="images/twtr.svg" id="twitter" class="py-1 shadow-2xl" height="32 " width="32"></button>
+                <button name="instagram" class="shadow-2xl px-3 py-2 rounded-full border-2 border-teal-900 transition duration-500 ease-in-out hover:bg-teal-800 " type="button " href="instagram.com ">
+                <img src="images/inst.svg" id="instagram" class="py-1 shadow-2xl"
+                        height="32 " width="32"></button>
+                <button name="facebook" class="shadow-2xl px-3 py-2 rounded-full border-2 border-teal-900 transition duration-500 ease-in-out hover:bg-teal-800 " type="button " href="facebook.com ">
+                <img src="images/fcbk.svg" id="facebook" class="py-1 shadow-2xl" height="32 "
+                        width="32"></button>
             </div>
         </header>
     </div>
@@ -73,7 +96,7 @@
                                 topic</strong></a>
                     </li>
                     <li class="mr-3 ">
-                        <a class="flex justify-center inline-block rounded-full border-2 px-3 py-3 border-teal-900 text-ddteal shadow-xl transition duration-500 ease-in-out bg-lteal hover:bg-teal-800 " href="#team "><strong>
+                        <a class="flex justify-center inline-block rounded-full border-2 px-3 py-3 border-teal-900 text-ddteal shadow-xl transition duration-500 ease-in-out bg-lteal hover:bg-teal-800 " href="/blog "><strong>
                                 visit our blog
                             </strong></a>
                         <li class="mr-3 ">
@@ -83,10 +106,9 @@
                                 team
                             </strong></a>
                         </li>
-
                     </li>
                     <li class="mr-3 ">
-                        <a class="flex justify-center inline-block rounded-full border-2 px-3 py-3 border-teal-900 text-ddteal shadow-xl transition duration-500 ease-in-out bg-lteal hover:bg-teal-800 " href="#team "><strong>
+                        <a class="flex justify-center inline-block rounded-full border-2 px-3 py-3 border-teal-900 text-ddteal shadow-xl transition duration-500 ease-in-out bg-lteal hover:bg-teal-800 " href="/pages/donate "><strong>
                                 donate
                             </strong></a>
                     </li>
@@ -101,8 +123,9 @@
             </li>
         </ul-->
     </nav>
-    <div class="justify-center bg-teal-600 w-full h-full ">
-        <p class=" "></p>
+
+    <div class="flex justify-center bg-teal-600 w-auto h-auto ">
+        <p class="py-3"><strong>welcome to edupod's official site, a nonprofit based in San Jose, California.</strong></p>
     </div>
 </body>
 
