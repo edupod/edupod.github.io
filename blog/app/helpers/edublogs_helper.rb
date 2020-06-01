@@ -1,2 +1,0 @@
-module EdublogsHelper
-end
