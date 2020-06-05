@@ -52,15 +52,15 @@
 </head>
 
 <body>
-    <div class="w-full">
-        <header class="flex items-center justify-between p-2 shadow-xl bg-lteal">
+    <div class="w-full rounded-full shadow-sm">
+        <header class="flex items-center justify-between p-2 shadow-xl bg-lteal ">
             <div class="flex items-center block w-32 px-4 py-3" height="150" width="150">
-                <img src="images/LogoMic.svg" alt="edupod" height="150" width="150" class="transition duration-500 ease-in-out border-2 border-teal-900 rounded-full shadow-2xl bg-lteal hover:bg-teal-800" />
+                <img src="images/LogoMic.svg" alt="edupod" height="150" width="150" class="transition duration-500 ease-in-out border-2 border-teal-900 rounded-full shadow-2xl hover:bg-teal-800" />
             </div>
             <div class="flex items-center w-auto ml-8">
-                <button type=" button " class="bg-teal-600 hover:bg-teal-800 "><a
+                <button type=" button " class=" hover:bg-teal-800"><a
                         href="/edupodevhs.github.io/index.html " /></button>
-                <img title="home page" src="images/ctrlogonopillsm.svg " class="transition duration-500 ease-in-out border-2 border-teal-900 rounded-full shadow-2xl bg-lteal hover:bg-teal-800 " width="300 " height="45 " />
+                <img title="home page" src="images/ctrlogonopillsm.svg " class="transition duration-500 ease-in-out border-2 border-teal-900 rounded-full shadow-2xl lteal hover:bg-teal-800 " width="300 " height="45 " />
             </div>
             <div class="container flex items-center justify-center py-20 space-x-1">
                 <div class="justify-between p-2 "></div>
@@ -73,14 +73,28 @@
             </div>
         </header>
     </div>
-    <nav class="flex justify-center w-full p-2 m-2 border-2 border-teal-900 rounded-full shadow-2xl bg-dlteal">
+    <script>
+        var num = 200; //number of pixels before modifying styles
+
+        $(window).bind('scroll', function() {
+            if ($(window).scrollTop() > num) {
+                $('.menu').addClass('fixed');
+                $("#slider").animate({
+                    width: '+=30px'
+                }, 1000);
+            } else {
+                $('.menu').removeClass('fixed');
+            }
+        });
+    </script>
+    <nav style="z-index: 10000;" class="top-0 flex justify-center w-full p-2 m-2 border-2 border-teal-900 rounded-full shadow-2xl bg-dlteal menu" id="#slider">
         <div class="flex flex-wrap items-center justify-center mx-auto ">
             <div class="flex content-center justify-center w-full pt-2 md:justify-center ">
                 <ul class="flex items-center justify-center flex-1 list-reset md:flex-none ">
                     <li class="mr-3 ">
                         <a class="flex justify-center inline-block px-3 py-3 transition duration-500 ease-in-out border-2 border-teal-900 rounded-full shadow-xl text-ddteal bg-lteal hover:bg-teal-800 " href="#whatwedo "><strong>
                                 what
-                                we do</strong></a>
+                            </strong></a>
                     </li>
                     <li class="mr-3 ">
                         <a class="flex justify-center inline-block px-3 py-3 transition duration-500 ease-in-out border-2 border-teal-900 rounded-full shadow-xl text-ddteal bg-lteal hover:bg-teal-800 " href="#disease "><strong>
@@ -116,14 +130,12 @@
             </li>
         </ul-->
     </nav>
-    <div class="flex justify-center w-full bg-teal-600 ">
-        <div class="container relative flex items-center justify-center text-center bg-teal-600 parallax bg">
-            <img src="images/LogoMic.svg" class="w-full h-full">
-            <div class="absolute">
-                <script>
-                </script>
-                <h1 class="text-6xl font-black fill ">welcome to edupod's official site, a nonprofit based in San Jose, California.
-                </h1>
+    <div class="flex justify-center w-full rounded-full">
+        <div class="container relative flex items-center justify-center text-center ">
+            <img src="images/LogoMic.svg " class="w-full h-full rounded-2lg ">
+            <div class="absolute flex justify-center ">
+                <!---h1 class="text-6xl font-black fill ">welcome to edupod's official site, a nonprofit based in San Jose, California.
+                </!---h1-->
             </div>
         </div>
     </div>
