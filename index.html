@@ -6,21 +6,23 @@
 <head>
     <!--load jQuery-->
     <script src="jquery.min.js"></script>
+    <!--load jQuery UI-->
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script>
-        $(document).ready(function() {
-            $('#facebook').on('click', function() {
+        $(document).ready(function () {
+            $('#facebook').on('click', function () {
                 window.open('https://www.facebook.com/edupod.organization', '_blank');
                 console.log("opened facebook link");
             });
         });
-        $(document).ready(function() {
-            $('#twitter').on('click', function() {
+        $(document).ready(function () {
+            $('#twitter').on('click', function () {
                 window.open('https://twitter.com', '_blank');
                 console.log("opened twitter link");
             });
         });
-        $(document).ready(function() {
-            $('#instagram').on('click', function() {
+        $(document).ready(function () {
+            $('#instagram').on('click', function () {
                 window.open('https://www.instagram.com/edupod.organization/', '_blank');
                 console.log("opened instagram link");
             });
@@ -55,67 +57,84 @@
     <div class="w-full rounded-full shadow-sm">
         <header class="flex items-center justify-between p-2 shadow-xl bg-lteal ">
             <div class="flex items-center block w-32 px-4 py-3" height="150" width="150">
-                <img src="images/LogoMic.svg" alt="edupod" height="150" width="150" class="transition duration-500 ease-in-out border-2 border-teal-900 rounded-full shadow-2xl hover:bg-teal-800" />
+                <img src="images/LogoMic.svg" alt="edupod" height="150" width="150"
+                    class="transition duration-500 ease-in-out border-2 border-teal-900 rounded-full shadow-2xl hover:bg-teal-800" />
             </div>
             <div class="flex items-center w-auto ml-8">
-                <button type=" button " class=" hover:bg-teal-800"><a
+                <button type=" button " class="hover:bg-teal-800"><a
                         href="/edupodevhs.github.io/index.html " /></button>
-                <img title="home page" src="images/ctrlogonopillsm.svg " class="transition duration-500 ease-in-out border-2 border-teal-900 rounded-full shadow-2xl lteal hover:bg-teal-800 " width="300 " height="45 " />
+                <img title="home page" src="images/ctrlogonopillsm.svg "
+                    class="transition duration-500 ease-in-out border-2 border-teal-900 rounded-full shadow-2xl lteal hover:bg-teal-800 "
+                    width="300 " height="45 " />
             </div>
             <div class="container flex items-center justify-center py-20 space-x-1">
                 <div class="justify-between p-2 "></div>
-                <button name="twitter" class="px-3 py-2 transition duration-500 ease-in-out border-2 border-teal-900 rounded-full shadow-2xl hover:bg-teal-800 " type="button ">
+                <button name="twitter"
+                    class="px-3 py-2 transition duration-500 ease-in-out border-2 border-teal-900 rounded-full shadow-2xl hover:bg-teal-800 "
+                    type="button ">
                     <img src="images/twtr.svg" id="twitter" class="py-1 shadow-2xl" height="32 " width="32"></button>
-                <button name="instagram" class="px-3 py-2 transition duration-500 ease-in-out border-2 border-teal-900 rounded-full shadow-2xl hover:bg-teal-800 " type="button " href="instagram.com ">
+                <button name="instagram"
+                    class="px-3 py-2 transition duration-500 ease-in-out border-2 border-teal-900 rounded-full shadow-2xl hover:bg-teal-800 "
+                    type="button " href="instagram.com ">
                     <img src="images/inst.svg" id="instagram" class="py-1 shadow-2xl" height="32 " width="32"></button>
-                <button name="facebook" class="px-3 py-2 transition duration-500 ease-in-out border-2 border-teal-900 rounded-full shadow-2xl hover:bg-teal-800 " type="button " href="facebook.com ">
+                <button name="facebook"
+                    class="px-3 py-2 transition duration-500 ease-in-out border-2 border-teal-900 rounded-full shadow-2xl hover:bg-teal-800 "
+                    type="button " href="facebook.com ">
                     <img src="images/fcbk.svg" id="facebook" class="py-1 shadow-2xl" height="32 " width="32"></button>
             </div>
         </header>
     </div>
     <script>
-        var num = 200; //number of pixels before modifying styles
+        //script to shrink navbar on scroll
 
-        $(window).bind('scroll', function() {
+        var num = 200; //number of pixels before modifying styles
+        var shrink = true; //shrink div
+
+        $(window).bind('scroll', function () {
             if ($(window).scrollTop() > num) {
                 $('.menu').addClass('fixed');
-                $("#slider").animate({
-                    width: '+=30px'
-                }, 1000);
+                $('.menu').animate({}, 500);
             } else {
                 $('.menu').removeClass('fixed');
             }
         });
     </script>
-    <nav style="z-index: 10000;" class="top-0 flex justify-center w-full p-2 m-2 border-2 border-teal-900 rounded-full shadow-2xl bg-dlteal menu" id="#slider">
+    <nav style="z-index: 10000;"
+        class="top-0 flex justify-center w-full p-2 m-2 border-2 border-teal-900 rounded-full shadow-2xl bg-dlteal menu"
+        id="slider">
         <div class="flex flex-wrap items-center justify-center mx-auto ">
             <div class="flex content-center justify-center w-full pt-2 md:justify-center ">
                 <ul class="flex items-center justify-center flex-1 list-reset md:flex-none ">
                     <li class="mr-3 ">
-                        <a class="flex justify-center inline-block px-3 py-3 transition duration-500 ease-in-out border-2 border-teal-900 rounded-full shadow-xl text-ddteal bg-lteal hover:bg-teal-800 " href="#whatwedo "><strong>
+                        <a class="flex justify-center inline-block px-3 py-3 transition duration-500 ease-in-out border-2 border-teal-900 rounded-full shadow-xl text-ddteal bg-lteal hover:bg-teal-800 "
+                            href="#whatwedo "><strong>
                                 what
                             </strong></a>
                     </li>
                     <li class="mr-3 ">
-                        <a class="flex justify-center inline-block px-3 py-3 transition duration-500 ease-in-out border-2 border-teal-900 rounded-full shadow-xl text-ddteal bg-lteal hover:bg-teal-800 " href="#disease "><strong>
+                        <a class="flex justify-center inline-block px-3 py-3 transition duration-500 ease-in-out border-2 border-teal-900 rounded-full shadow-xl text-ddteal bg-lteal hover:bg-teal-800 "
+                            href="#disease "><strong>
                                 current
                                 disease
                                 topic</strong></a>
                     </li>
                     <li class="mr-3 ">
-                        <a class="flex justify-center inline-block px-3 py-3 transition duration-500 ease-in-out border-2 border-teal-900 rounded-full shadow-xl text-ddteal bg-lteal hover:bg-teal-800 " href="/blog "><strong>
+                        <a class="flex justify-center inline-block px-3 py-3 transition duration-500 ease-in-out border-2 border-teal-900 rounded-full shadow-xl text-ddteal bg-lteal hover:bg-teal-800 "
+                            href="/blog "><strong>
                                 visit our blog
                             </strong></a>
-                        <li class="mr-3 ">
-                            <a class="flex justify-center inline-block px-3 py-3 transition duration-500 ease-in-out border-2 border-teal-900 rounded-full shadow-xl text-ddteal bg-lteal hover:bg-teal-800 " href="#team "><strong>
+                    <li class="mr-3 ">
+                        <a class="flex justify-center inline-block px-3 py-3 transition duration-500 ease-in-out border-2 border-teal-900 rounded-full shadow-xl text-ddteal bg-lteal hover:bg-teal-800 "
+                            href="#team "><strong>
                                 meet
                                 the
                                 team
                             </strong></a>
-                        </li>
+                    </li>
                     </li>
                     <li class="mr-3 ">
-                        <a class="flex justify-center inline-block px-3 py-3 transition duration-500 ease-in-out border-2 border-teal-900 rounded-full shadow-xl text-ddteal bg-lteal hover:bg-teal-800 " href="/pages/donate "><strong>
+                        <a class="flex justify-center inline-block px-3 py-3 transition duration-500 ease-in-out border-2 border-teal-900 rounded-full shadow-xl text-ddteal bg-lteal hover:bg-teal-800 "
+                            href="/pages/donate "><strong>
                                 donate
                             </strong></a>
                     </li>
