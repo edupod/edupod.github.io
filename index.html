@@ -8,6 +8,8 @@
     <script src="jquery.min.js"></script>
     <!--load jQuery UI-->
     <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <!--load AoS-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         $(document).ready(function () {
             $('#facebook').on('click', function () {
@@ -67,8 +69,11 @@
                     class="transition duration-500 ease-in-out border-2 border-teal-900 rounded-full shadow-2xl lteal hover:bg-teal-800 "
                     width="300 " height="45 " />
             </div>
+            <script>
+                $('.icons').animate({left:0})
+            </script>
             <div class="container flex items-center justify-center py-20 space-x-1">
-                <div class="justify-between p-2 "></div>
+                <div id="icons" class="justify-between p-2 "></div>
                 <button name="twitter"
                     class="px-3 py-2 transition duration-500 ease-in-out border-2 border-teal-900 rounded-full shadow-2xl hover:bg-teal-800 "
                     type="button ">
@@ -93,11 +98,61 @@
         $(window).bind('scroll', function () {
             if ($(window).scrollTop() > num) {
                 $('.menu').addClass('fixed');
-                $('.menu').animate({}, 500);
+                $('.menu').animate({
+                    width: '50%'
+                });
             } else {
                 $('.menu').removeClass('fixed');
+                $('.menu').animate({
+                    width: '100%'
+                })
             }
         });
+        jQuery('document').ready(function(){
+    if(jQuery('.right').length){
+
+            jQuery(window).scroll(function () {
+                var win_width = jQuery(window).width();
+                if (win_width > 1200) {
+                    var topoffset = jQuery('.right').offset().top;
+                    var leftoffset = jQuery('.right').offset().left;
+
+                    var botoffset = jQuery('footer').offset().top;
+
+                    var block_height = jQuery('.floating-block').height();
+                    botoffset = botoffset - block_height - 250;
+                    topoffset = topoffset - 200;
+
+                    var sTop = jQuery(window).scrollTop();
+
+                    var top_fix_to_abs = botoffset - topoffset;
+                    if (sTop < topoffset) {
+                        jQuery('.floating-block').removeClass('curr_fix');
+                        jQuery('.floating-block').removeClass('right_fix');
+                        jQuery('.floating-block').css('top', "");
+                        jQuery('.floating-block').css('left', "");
+                        console.log('h1');
+                    }
+                    if (sTop > topoffset && sTop < botoffset) {
+                        jQuery('.floating-block').addClass('curr_fix');
+                        jQuery('.floating-block').addClass('right_fix').css('left', leftoffset);
+                        jQuery('.floating-block').css('top', "");
+                        console.log('h2');
+                    }
+                    if (sTop >= botoffset && sTop > topoffset) {
+                        jQuery('.floating-block').removeClass('curr_fix');
+                        jQuery('.floating-block').css('left', 0);
+                        jQuery('.floating-block').css('top', top_fix_to_abs);
+                        console.log('h3');
+                        //return;
+
+                    }
+                }
+            });
+	}
+
+
+  });
     </script>
     <nav style="z-index: 10000;"
         class="top-0 flex justify-center w-full p-2 m-2 border-2 border-teal-900 rounded-full shadow-2xl bg-dlteal menu"
@@ -151,13 +206,17 @@
     </nav>
     <div class="flex justify-center w-full rounded-full">
         <div class="container relative flex items-center justify-center text-center ">
-            <img src="images/LogoMic.svg " class="w-full h-full rounded-2lg ">
+            <img src="images/LogoMic.svg " class="w-full h-full rounded-2lg " style="z-index: 0;">
             <div class="absolute flex justify-center ">
                 <!---h1 class="text-6xl font-black fill ">welcome to edupod's official site, a nonprofit based in San Jose, California.
                 </!---h1-->
             </div>
         </div>
+
     </div>
+            <div id="" class="absolute flex justify-center w-full rounded-full shadow-2xl bg-lteal" style="z-index: 200;">asds
+            
+            </div>
 </body>
 
 </html>
