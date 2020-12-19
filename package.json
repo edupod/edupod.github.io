@@ -7,8 +7,10 @@
     "@rails/ujs": "^6.0.0",
     "@rails/webpacker": "^5.2.1",
     "angular-cli-ghpages": "^0.6.2",
+    "autoprefixer": "^10.1.0",
+    "postcss": "^8.2.1",
     "tailwind": "^4.0.0",
-    "tailwindcss": "^1.4.6",
+    "tailwindcss": "^2.0.2",
     "turbolinks": "^5.2.0",
     "yarn": "^1.22.4"
   },

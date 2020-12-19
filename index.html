@@ -25,10 +25,12 @@
         });
         $(document).ready(function () {
             $('#instagram').on('click', function () {
-                window.open('https://www.instagram.com/edupod.organization/', '_blank');
+                window.open('https://www.instagram.com/edupod.inc/', '_blank');
                 console.log("opened instagram link");
             });
         });
+        $(document).ready(function() {
+        $('.menu').fadeOut();          }
     </script>
     <title>edupod - a student-led nonprofit</title>
     <meta charset="utf-8" />
@@ -58,53 +60,108 @@
 <body>
     <div class="w-full rounded-full shadow-sm">
         <header class="flex items-center justify-between p-2 shadow-xl bg-lteal ">
-            <div class="flex items-center block w-32 px-4 py-3" height="150" width="150">
-                <img src="images/LogoMic.svg" alt="edupod" height="150" width="150"
-                    class="transition duration-500 ease-in-out border-2 border-teal-900 rounded-full shadow-2xl hover:bg-teal-800" />
-            </div>
+
             <div class="flex items-center w-auto ml-8">
-                <button type=" button " class="hover:bg-teal-800"><a
-                        href="/edupodevhs.github.io/index.html " /></button>
+                <button type="button" class="pt-10 hover:bg-teal-800 "><a
+                        href="/edupod.github.io/index.html " /></button>
                 <img title="home page" src="images/ctrlogonopillsm.svg "
                     class="transition duration-500 ease-in-out border-2 border-teal-900 rounded-full shadow-2xl lteal hover:bg-teal-800 "
                     width="300 " height="45 " />
+            <div class="container flex items-center justify-center py-2 space-x-1">
+                <button name="twitter"
+                    class="px-3 py-2 transition duration-500 ease-in-out border-2 border-teal-900 rounded-full shadow-2xl hover:bg-teal-800 "
+                    type="button ">
+                    <img src="images/twtr.svg" id="twitter" class="py-1 shadow-2xl" height="16" width="16"></button>
+                <button name="instagram"
+                    class="px-3 py-2 transition duration-500 ease-in-out border-2 border-teal-900 rounded-full shadow-2xl hover:bg-teal-800 "
+                    type="button " href="instagram.com ">
+                    <img src="images/inst.svg" id="instagram" class="py-1 shadow-2xl" height="16" width="16"></button>
+                <button name="facebook"
+                    class="px-3 py-2 transition duration-500 ease-in-out border-2 border-teal-900 rounded-full shadow-2xl hover:bg-teal-800 "
+                    type="button " href="facebook.com ">
+                    <img src="images/fcbk.svg" id="facebook" class="py-1 shadow-2xl" height="16" width="16"></button>
+            </div>
             </div>
             <script>
                 $('.icons').animate({left:0})
             </script>
-            <div class="container flex items-center justify-center py-20 space-x-1">
-                <div id="icons" class="justify-between p-2 "></div>
-                <button name="twitter"
-                    class="px-3 py-2 transition duration-500 ease-in-out border-2 border-teal-900 rounded-full shadow-2xl hover:bg-teal-800 "
-                    type="button ">
-                    <img src="images/twtr.svg" id="twitter" class="py-1 shadow-2xl" height="32 " width="32"></button>
-                <button name="instagram"
-                    class="px-3 py-2 transition duration-500 ease-in-out border-2 border-teal-900 rounded-full shadow-2xl hover:bg-teal-800 "
-                    type="button " href="instagram.com ">
-                    <img src="images/inst.svg" id="instagram" class="py-1 shadow-2xl" height="32 " width="32"></button>
-                <button name="facebook"
-                    class="px-3 py-2 transition duration-500 ease-in-out border-2 border-teal-900 rounded-full shadow-2xl hover:bg-teal-800 "
-                    type="button " href="facebook.com ">
-                    <img src="images/fcbk.svg" id="facebook" class="py-1 shadow-2xl" height="32 " width="32"></button>
+
+            <nav style="z-index: 10000;" class="top-0 flex justify-end w-full p-2 pr-40 m-2"  id="slider">
+                <ul class="flex items-center justify-center flex-1 list-reset md:flex-none ">
+
+                
+                    <li class="mr-3 ">
+                        <a class="flex justify-center inline-block px-3 py-3 transition duration-500 ease-in-out border-2 border-teal-900 rounded-full shadow-xl text-ddteal bg-lteal hover:bg-teal-800 "
+                            href="#whatwedo "><strong>
+                                what we do
+                            </strong></a>
+                    </li>
+                    <li class="mr-3 ">
+                        <a class="flex justify-center inline-block px-3 py-3 transition duration-500 ease-in-out border-2 border-teal-900 rounded-full shadow-xl text-ddteal bg-lteal hover:bg-teal-800 "
+                            href="#disease "><strong>
+                                current
+                                
+                                topic</strong></a>
+                    </li>
+                    <li class="mr-3 ">
+                        <a class="flex justify-center inline-block px-3 py-3 transition duration-500 ease-in-out border-2 border-teal-900 rounded-full shadow-xl text-ddteal bg-lteal hover:bg-teal-800 "
+                            href="/blog "><strong>
+                                visit our blog
+                            </strong></a>
+                    <li class="mr-3 ">
+                        <a class="flex justify-center inline-block px-3 py-3 transition duration-500 ease-in-out border-2 border-teal-900 rounded-full shadow-xl text-ddteal bg-lteal hover:bg-teal-800 "
+                            href="#team "><strong>
+                                meet
+                                the
+                                team
+                            </strong></a>
+                    </li>
+                    </li>
+                    <li class="mr-3 ">
+                        <a class="flex justify-center inline-block px-3 py-3 transition duration-500 ease-in-out border-2 border-teal-900 rounded-full shadow-xl text-ddteal bg-lteal hover:bg-teal-800 "
+                            href="/pages/donate "><strong>
+                                donate
+                            </strong></a>
+                    </li>
+                </ul>
             </div>
-        </header>
-    </div>
+
+        </div>
+        <!--ul class="flex items-center flex-1 list-reset md:flex-end ">
+            <li class="mr-3 ">
+                <a class="flex inline-block px-3 py-3 border-2 border-teal-900 rounded-full text-ddteal " href="# ">to
+                            top</a>
+            </li>
+        </ul-->
+    </nav>
+</header>
+        
+
     <script>
         //script to shrink navbar on scroll
 
-        var num = 200; //number of pixels before modifying styles
-        var shrink = true; //shrink div
+        var num = 80; //number of pixels before modifying styles
+        var shrink = false; //shrink div
+        
+        $(document).scroll(function() {
+        var y = $(this).scrollTop();
+        if (y > 80) {
+        $('.menu').fadeIn();
+        } else {
+        $('.menu').fadeOut();          
+        }});
 
+        
         $(window).bind('scroll', function () {
             if ($(window).scrollTop() > num) {
                 $('.menu').addClass('fixed');
                 $('.menu').animate({
-                    width: '50%'
+                    width: '50%' [30]
                 });
             } else {
                 $('.menu').removeClass('fixed');
                 $('.menu').animate({
-                    width: '100%'
+                    width: '100%' [30]
                 })
             }
         });
@@ -152,25 +209,33 @@
 	}
 
 
-  });
+});
     </script>
     <nav style="z-index: 10000;"
-        class="top-0 flex justify-center w-full p-2 m-2 border-2 border-teal-900 rounded-full shadow-2xl bg-dlteal menu"
+        class="top-0 flex justify-center w-full p-2 pr-40 m-2 border-2 rounded-full shadow-2xl menu"
         id="slider">
+        <button type="button" class="justify-start pt-10 pl-10 hover:bg-teal-800"><a
+                        href="/edupod.github.io/index.html "></button>
+                <img title="home page" src="images/ctrlogonopillsm.svg "
+                    class="transition duration-500 ease-in-out border-2 border-teal-900 rounded-full shadow-2xl lteal hover:bg-teal-800 "
+                    width="180" height="27" />
+                </div>
         <div class="flex flex-wrap items-center justify-center mx-auto ">
             <div class="flex content-center justify-center w-full pt-2 md:justify-center ">
                 <ul class="flex items-center justify-center flex-1 list-reset md:flex-none ">
+                    <div class="flex items-center w-auto">
+
                     <li class="mr-3 ">
                         <a class="flex justify-center inline-block px-3 py-3 transition duration-500 ease-in-out border-2 border-teal-900 rounded-full shadow-xl text-ddteal bg-lteal hover:bg-teal-800 "
                             href="#whatwedo "><strong>
-                                what
+                                what we do
                             </strong></a>
                     </li>
                     <li class="mr-3 ">
                         <a class="flex justify-center inline-block px-3 py-3 transition duration-500 ease-in-out border-2 border-teal-900 rounded-full shadow-xl text-ddteal bg-lteal hover:bg-teal-800 "
                             href="#disease "><strong>
                                 current
-                                disease
+                                
                                 topic</strong></a>
                     </li>
                     <li class="mr-3 ">
@@ -204,6 +269,21 @@
             </li>
         </ul-->
     </nav>
+        <div style="z-index: 10000;"
+        class="top-0 flex justify-center w-full h-full p-2 m-2 border-2 border-teal-900 rounded-full shadow-2xl bg-dlteal">
+        <div class="flex flex-wrap items-center justify-center mx-auto ">
+            <div class="flex content-center justify-center w-full pt-2 md:justify-center ">
+            </div>
+            <spacer></spacer>
+            welcome to edupod!
+        </div>
+        <!--ul class="flex items-center flex-1 list-reset md:flex-end ">
+            <li class="mr-3 ">
+                <a class="flex inline-block px-3 py-3 border-2 border-teal-900 rounded-full text-ddteal " href="# ">to
+                            top</a>
+            </li>
+        </ul-->
+    </div>
     <div class="flex justify-center w-full rounded-full">
         <div class="container relative flex items-center justify-center text-center ">
             <img src="images/LogoMic.svg " class="w-full h-full rounded-2lg " style="z-index: 0;">
@@ -214,7 +294,7 @@
         </div>
 
     </div>
-            <div id="" class="absolute flex justify-center w-full rounded-full shadow-2xl bg-lteal" style="z-index: 200;">asds
+            <div id="" class="absolute flex justify-center w-full rounded-full shadow-2xl bg-lteal" style="z-index: 200;">
             
             </div>
 </body>
