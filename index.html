@@ -59,17 +59,34 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 
+<script>
+$(".elm").hover(
+    function(){ $(this).addClass('hover') },
+    function(){ $(this).removeClass('hover') }
+)
+</script>
+<style>
+    @keyframes doaflip{
+        to {
+            transform: rotate(360deg);
+        }
+    }
+    .hover{
+        animation-name: doaflip;
+        animation-duration: 2s;
+    }
+</style>
 <body>
-    <div class="w-full rounded-full shadow-sm">
+    <div class="w-full ">
         <header class="flex items-center justify-between p-2 shadow-xl bg-lteal ">
 
-            <div class="flex items-center w-auto ml-8">
-                <button type="button" class="pt-10 hover:bg-teal-800 "><a
-                        href="/edupod.github.io/index.html " /></button>
+            <div class="flex items-center w-auto ml-8" id="elm" >
+                <button type="button" class="elm hover:bg-teal-800"><a
+                        href="/index.html"></button>
                 <img title="home page" src="images/ctrlogonopillsm.svg "
-                    class="transition duration-500 ease-in-out border-2 border-teal-900 rounded-full shadow-2xl lteal hover:bg-teal-800 "
+                    class="transition duration-500 ease-in-out border-2 border-teal-900 rounded-full shadow-2xl lteal hover:bg-teal-800"
                     width="300 " height="45 " />
-            <div class="container flex items-center justify-center py-2 space-x-1">
+            <div class="container flex items-center justify-center py-2 space-x-1 hover:animate-spin">
 
                 <button name="twitter"
                     class="px-3 py-2 transition duration-500 ease-in-out border-2 border-teal-900 rounded-full shadow-2xl hover:bg-teal-800 "
@@ -94,25 +111,25 @@
 
                 
                     <li class="mr-3 ">
-                        <a class="flex justify-center inline-block px-3 py-3 transition duration-500 ease-in-out border-2 border-teal-900 rounded-full shadow-xl text-ddteal bg-lteal hover:bg-teal-800 "
+                        <a class="flex justify-center px-3 py-3 transition duration-500 ease-in-out border-2 border-teal-900 rounded-full shadow-xl text-ddteal bg-lteal hover:bg-teal-800 "
                             href="#whatwedo "><strong>
                                 what we do
                             </strong></a>
                     </li>
                     <li class="mr-3 ">
-                        <a class="flex justify-center inline-block px-3 py-3 transition duration-500 ease-in-out border-2 border-teal-900 rounded-full shadow-xl text-ddteal bg-lteal hover:bg-teal-800 "
+                        <a class="flex justify-center px-3 py-3 transition duration-500 ease-in-out border-2 border-teal-900 rounded-full shadow-xl text-ddteal bg-lteal hover:bg-teal-800 "
                             href="#disease "><strong>
                                 current
                                 
                                 topic</strong></a>
                     </li>
                     <li class="mr-3 ">
-                        <a class="flex justify-center inline-block px-3 py-3 transition duration-500 ease-in-out border-2 border-teal-900 rounded-full shadow-xl text-ddteal bg-lteal hover:bg-teal-800 "
+                        <a class="flex justify-center px-3 py-3 transition duration-500 ease-in-out border-2 border-teal-900 rounded-full shadow-xl text-ddteal bg-lteal hover:bg-teal-800 "
                             href="/blog "><strong>
                                 visit our blog
                             </strong></a>
                     <li class="mr-3 ">
-                        <a class="flex justify-center inline-block px-3 py-3 transition duration-500 ease-in-out border-2 border-teal-900 rounded-full shadow-xl text-ddteal bg-lteal hover:bg-teal-800 "
+                        <a class="flex justify-center px-3 py-3 transition duration-500 ease-in-out border-2 border-teal-900 rounded-full shadow-xl text-ddteal bg-lteal hover:bg-teal-800 "
                             href="#team "><strong>
                                 meet
                                 the
@@ -121,7 +138,7 @@
                     </li>
                     </li>
                     <li class="mr-3 ">
-                        <a class="flex justify-center inline-block px-3 py-3 transition duration-500 ease-in-out border-2 border-teal-900 rounded-full shadow-xl text-ddteal bg-lteal hover:bg-teal-800 "
+                        <a class="flex justify-center px-3 py-3 transition duration-500 ease-in-out border-2 border-teal-900 rounded-full shadow-xl text-ddteal bg-lteal hover:bg-teal-800 "
                             href="/pages/donate "><strong>
                                 donate
                             </strong></a>
@@ -153,7 +170,11 @@
         } else {
         $('.menu').fadeOut(1);          
         }});
-
+        
+        $(".elm").hover(
+        function(){ $(this).addClass('hover') },
+        function(){ $(this).removeClass('hover') }
+        )
         
         $(window).bind('scroll', function () {
             if ($(window).scrollTop() > num) {
@@ -226,7 +247,7 @@
                     <div class="flex items-center w-auto">
 
                     <li class="mr-3 ">
-                        <a class="flex justify-center inline-block px-3 py-3 transition duration-500 ease-in-out border-2 border-teal-900 rounded-full shadow-xl text-ddteal bg-lteal hover:bg-teal-800 "
+                        <a class="flex justify-center px-3 py-3 transition duration-500 ease-in-out border-2 border-teal-900 rounded-full shadow-xl text-ddteal bg-lteal hover:bg-teal-800 "
                             href="#whatwedo "><strong>
                                 what we do
                             </strong></a>
@@ -270,29 +291,62 @@
         </ul-->
     </nav>
         <div style="z-index: 10000;"
-        class="top-0 flex justify-center w-full h-full p-2 m-2 border-2 border-teal-900 rounded-full shadow-2xl bg-dlteal">
-        <div class="flex flex-wrap items-center justify-center mx-auto ">
-            <div class="flex content-center justify-center w-full pt-2 md:justify-center ">
-            </div>
-            <spacer></spacer>
-            welcome to edupod!
+        class="flex justify-center h-400 bg-dlteal">
+        <p class="justify-center text-6xl font-bold text-ddteal w-300 font-display">
+            <br>
+            edupod 
+            <br>
+        </p>
+        
         </div>
-        <!--ul class="flex items-center flex-1 list-reset md:flex-end ">
-            <li class="mr-3 ">
-                <a class="flex inline-block px-3 py-3 border-2 border-teal-900 rounded-full text-ddteal " href="# ">to
-                            top</a>
-            </li>
-        </ul-->
+        <div style="z-index: 10000;"
+        class="flex justify-center bg-dlteal">
+        <p class="justify-center text-ddteal font-body" >
+            <br>
+            est. 2019
+            <br>
+        </p>
+        </div><div style="z-index: 10000;"
+        class="top-0 flex justify-center bg-dlteal">
+        <p class="justify-center mb-10 text-4xl font-extrabold stroke-1 text-ddteal str font-body font-b" >
+            <br>
+            learn┃teach┃empower
+            <br>
+        </p>
+        </div>
     </div>
+
+    <div class="flex grid items-center grid-cols-2 my-10 border-2 border-teal-900 rounded-full shadow-xl justify-items-center bg-lteal row">
+        <!--left side-->    
+            <div class="items-center h-full col-auto text-3xl font-extrabold text-center text-white align-middle rounded-full border-lteal justify-items-center border-2xl column font-body bg-ddteal">
+               <p class="items-center align-middle">
+                   what we do
+               </p> 
+            </div>
+        <!--right side-->
+            <div class="col-auto px-8 py-10 text-xl rounded-full font-body column ">
+                We are a nonprofit based in San Jose, California. Started by high school students, we 
+                strive to create intelligent infographics to spread awareness about health that affect 
+                us all. We've been working on our mission since 2019, and since then, we've gathered 
+                quite a few new like-minded members.
+
+
+                <br>
+                <span>
+                    
+                </span>  
+            </div>
+    </div>
+
+
     <div class="flex justify-center w-full rounded-full">
-        <div class="container relative flex items-center justify-center text-center ">
-            <img src="images/LogoMic.svg " class="w-full h-full rounded-2lg " style="z-index: 0;">
+        <div class="container relative flex items-center justify-center text-center">
+            <img src="images/LogoMic.svg " class="w-full rounded-2lg" style="z-index: 0">
             <div class="absolute flex justify-center ">
-                <!---h1 class="text-6xl font-black fill ">welcome to edupod's official site, a nonprofit based in San Jose, California.
-                </!---h1-->
+                <h1 class="text-6xl font-black fill ">
+                </h1>
             </div>
         </div>
-
     </div>
             <div id="" class="absolute flex justify-center w-full rounded-full shadow-2xl bg-lteal" style="z-index: 200;">
             

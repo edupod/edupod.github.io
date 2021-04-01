@@ -28,7 +28,7 @@ module.exports = {
                     'primary': '#5EA6B0',
                     'secondary': '#ffed4a',
                     'danger': '#e3342f',
-                })
+                }),
             }
         }
     }
