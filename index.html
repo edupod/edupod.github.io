@@ -56,7 +56,6 @@
     </script>
     <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="css/index.css">
 </head>
 
 <script>
@@ -76,15 +75,15 @@ $(".elm").hover(
         animation-duration: 2s;
     }
 </style>
-<body>
+<body class="bg-fixed bg-white bg-opacity-50" style="background-image: url(/images/logo.svg); background-repeat:no-repeat; background-position: center;" >
     <div class="w-full ">
-        <header class="flex items-center justify-between p-2 shadow-xl bg-lteal ">
+        <header class="flex items-center justify-between p-2 shadow-xl bg-vlteal ">
 
             <div class="flex items-center w-auto ml-8" id="elm" >
                 <button type="button" class="elm hover:bg-teal-800"><a
                         href="/index.html"></button>
                 <img title="home page" src="images/ctrlogonopillsm.svg "
-                    class="transition duration-500 ease-in-out border-2 border-teal-900 rounded-full shadow-2xl lteal hover:bg-teal-800"
+                    class="transition duration-500 ease-in-out border-2 border-teal-900 rounded-full shadow-2xl hover:bg-teal-800"
                     width="300 " height="45 " />
             <div class="container flex items-center justify-center py-2 space-x-1 hover:animate-spin">
 
@@ -149,7 +148,7 @@ $(".elm").hover(
         </div>
         <!--ul class="flex items-center flex-1 list-reset md:flex-end ">
             <li class="mr-3 ">
-                <a class="flex inline-block px-3 py-3 border-2 border-teal-900 rounded-full text-ddteal " href="# ">to
+                <a class="flex px-3 py-3 border-2 border-teal-900 rounded-full text-ddteal " href="# ">to
                             top</a>
             </li>
         </ul-->
@@ -234,12 +233,11 @@ $(".elm").hover(
 });
     </script>
     <nav style="z-index: 10000;"
-        class="top-0 flex justify-center w-full p-2 pr-40 m-2 border-2 rounded-full shadow-2xl menu"
+        class="top-0 flex justify-center w-full p-2 pr-40 m-2 border-2 rounded-full shadow-2xl pb-7 menu"
         id="slider">
-
-                <img title="home page" src="images/ctrlogonopillsm.svg "
-                    class="transition duration-500 ease-in-out border-2 border-teal-900 rounded-full shadow-2xl lteal hover:bg-teal-800 "
-                    width="180" height="27" />
+                <img title="home page" src="images/ctrlogonopillsm.svg" 
+                    class="w-3/12 transition duration-500 ease-in-out border-2 border-teal-900 rounded-full shadow-2xl bg-lteal lteal hover:bg-teal-800"
+                    />
                 </div>
         <div class="flex flex-wrap items-center justify-center mx-auto ">
             <div class="flex content-center justify-center w-full pt-2 md:justify-center ">
@@ -290,9 +288,9 @@ $(".elm").hover(
             </li>
         </ul-->
     </nav>
-    <div style="background-image: url(/images/LogoMic.svg);">
+    <div class="bg-white bg-opacity-50">
         <div style="z-index: 10000;"
-        class="flex justify-center bg-fixed bg-no-repeat h-400 ">
+        class="flex justify-center bg-fixed bg-no-repeat pt-28 h-400 ">
         
         <p class="justify-center text-6xl font-bold text-ddteal w-300 font-display">
             <br>
@@ -318,14 +316,49 @@ $(".elm").hover(
         </div>
     </div>
 </div>
-    <div class="flex grid items-center grid-cols-2 mx-10 my-10 border-2 border-teal-900 rounded-full shadow-xl justify-items-center bg-lteal row">
+<div class="bg-white bg-opacity-50">
+    <div class="grid items-center grid-cols-2 mx-10 border-2 border-teal-900 rounded-full shadow-xl by-10 justify-items-center bg-lteal row">
         <!--left side-->    
-            <div class="h-full">
-            <div class="flex items-center justify-center h-full col-auto px-8 text-6xl font-extrabold text-center text-white rounded-full font-body column border-lteal border-2xl bg-ddteal">
+            <div class="w-full h-full">
+            <div class="flex items-center justify-center w-full h-full col-auto px-8 text-6xl font-extrabold text-center text-white rounded-full font-body column border-lteal border-2xl bg-ddteal">
                 what we do
             </div>
             </div>
         <!--right side-->
+        
+            <div class="col-auto px-8 py-10 text-2xl rounded-full font-body column ">
+                We are a nonprofit based in San Jose, California. Started by high school students, we 
+                strive to create intelligent infographics to spread awareness about health that affect 
+                us all. We've been working on our mission since 2019, and since then, we've gathered 
+                quite a few new like-minded members.
+            </div>
+    </div>
+
+    <div class="grid items-center grid-cols-2 mx-10 my-10 border-2 border-teal-900 rounded-full shadow-xl justify-items-center bg-lteal row">
+        <!--left side-->    
+        <div class="col-auto px-8 py-10 text-2xl rounded-full font-body column ">
+                We are a nonprofit based in San Jose, California. Started by high school students, we 
+                strive to create intelligent infographics to spread awareness about health that affect 
+                us all. We've been working on our mission since 2019, and since then, we've gathered 
+                quite a few new like-minded members.
+            </div>
+            
+        <!--right side-->
+            <div class="w-full h-full">
+            <div class="flex items-center justify-center h-full col-auto px-8 text-6xl font-extrabold text-center text-white rounded-full font-body column border-lteal border-2xl bg-ddteal">
+            current topic
+            </div>
+            </div>
+    </div>
+    <div class="grid items-center grid-cols-2 mx-10 my-10 border-2 border-teal-900 rounded-full shadow-xl justify-items-center bg-lteal row">
+        <!--left side-->    
+            <div class="w-full h-full">
+            <div class="flex items-center justify-center w-full h-full col-auto px-8 text-6xl font-extrabold text-center text-white rounded-full font-body column border-lteal border-2xl bg-ddteal">
+                visit our blog
+            </div>
+            </div>
+        <!--right side-->
+        
             <div class="col-auto px-8 py-10 text-2xl rounded-full font-body column ">
                 We are a nonprofit based in San Jose, California. Started by high school students, we 
                 strive to create intelligent infographics to spread awareness about health that affect 
@@ -336,34 +369,21 @@ $(".elm").hover(
 
     <div class="flex grid items-center grid-cols-2 mx-10 my-10 border-2 border-teal-900 rounded-full shadow-xl justify-items-center bg-lteal row">
         <!--left side-->    
-         <div class="col-auto px-8 py-10 text-2xl rounded-full font-body column ">
+        <div class="col-auto px-8 py-10 text-2xl rounded-full font-body column ">
                 We are a nonprofit based in San Jose, California. Started by high school students, we 
                 strive to create intelligent infographics to spread awareness about health that affect 
                 us all. We've been working on our mission since 2019, and since then, we've gathered 
                 quite a few new like-minded members.
             </div>
-          
-        <!--right side-->
-            <div class="h-full">
-            <div class="flex items-center justify-center h-full col-auto px-8 text-6xl font-extrabold text-center text-white rounded-full font-body column border-lteal border-2xl bg-ddteal">
-            current topic
-            </div>
-            </div>
-    </div>
-
-    <div class="flex justify-center w-full rounded-full">
-        <div class="container relative flex items-center justify-center text-center">
-            <img src="images/LogoMic.svg " class="w-full rounded-2lg" style="z-index: 0">
-            <div class="absolute flex justify-center ">
-                <h1 class="text-6xl font-black fill ">
-                </h1>
-            </div>
-        </div>
-    </div>
-            <div id="" class="absolute flex justify-center w-full rounded-full shadow-2xl bg-lteal" style="z-index: 200;">
             
+        <!--right side-->
+            <div class="w-full h-full">
+            <div class="flex items-center justify-center h-full col-auto px-8 text-6xl font-extrabold text-center text-white rounded-full font-body column border-lteal border-2xl bg-ddteal">
+            meet the team
             </div>
-
+            </div>
+    </div>
+    </div>
 </body>
 
 </html>

@@ -15,7 +15,8 @@
     "yarn": "^1.22.4"
   },
   "scripts": {
-    "build": "tailwind build css/index.css -o style.css"
+    "build": "tailwind build css/index.css -o style.css",
+    "build-css": "tailwindcss build index.css -o style.css"
   },
   "version": "0.1.0",
   "devDependencies": {
