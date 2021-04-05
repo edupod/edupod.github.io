@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:fb="http://ogp.me/ns/fb#">
 <!--html class="spectrum spectrum--medium spectrum--light" lang="html"-->
 <!-- Global site tag (gtag.js) - Google Analytics -->
 
@@ -39,6 +40,8 @@
     <meta name="description" content="The official site of edupod - a
             student-led nonprofit based in San Jose,
             California." />
+            <meta property="og:image" content="images/favicon.png" />
+
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-164572552-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -105,7 +108,7 @@ $(".elm").hover(
                 $('.icons').animate({left:0})
             </script>
 
-            <nav style="z-index: 10000;" class="top-0 flex justify-end w-full p-2 pr-40 m-2"  id="slider">
+            <nav style="z-index: 10000;" class="top-0 flex justify-end w-full p-2 pr-40 m-2 "  id="slider">
                 <ul class="flex items-center justify-center flex-1 list-reset md:flex-none ">
 
                 
@@ -167,7 +170,7 @@ $(".elm").hover(
         if (y > 100) {
         $('.menu').fadeIn();
         } else {
-        $('.menu').fadeOut(1);          
+        $('.menu').fadeOut(0.5);          
         }});
         
         $(".elm").hover(
@@ -233,7 +236,7 @@ $(".elm").hover(
 });
     </script>
     <nav style="z-index: 10000;"
-        class="top-0 flex justify-center w-full p-2 pr-40 m-2 border-2 rounded-full shadow-2xl pb-7 menu"
+        class="top-0 flex justify-center w-full p-2 pr-40 m-2 bg-white bg-opacity-25 border-2 rounded-full shadow-2xl pb-7 menu"
         id="slider">
                 <img title="home page" src="images/ctrlogonopillsm.svg" 
                     class="w-3/12 transition duration-500 ease-in-out border-2 border-teal-900 rounded-full shadow-2xl bg-lteal lteal hover:bg-teal-800"
