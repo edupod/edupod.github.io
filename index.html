@@ -78,7 +78,7 @@ $(".elm").hover(
         animation-duration: 2s;
     }
 </style>
-<body class="bg-fixed bg-white bg-opacity-50" style="background-image: url(/images/logo.svg); background-repeat:no-repeat; background-position: center;" >
+<body class="bg-fixed bg-white bg-opacity-50"> <!---style="background-image: url(/images/logo.svg); background-repeat:no-repeat; background-position: center;" --->
     <div class="w-full ">
         <header class="flex items-center justify-between p-2 shadow-xl bg-vlteal ">
 
@@ -111,7 +111,6 @@ $(".elm").hover(
             <nav style="z-index: 10000;" class="top-0 flex justify-end w-full p-2 pr-40 m-2 "  id="slider">
                 <ul class="flex items-center justify-center flex-1 list-reset md:flex-none ">
 
-                
                     <li class="mr-3 ">
                         <a class="flex justify-center px-3 py-3 transition duration-500 ease-in-out border-2 border-teal-900 rounded-full shadow-xl text-ddteal bg-lteal hover:bg-teal-800 "
                             href="#whatwedo "><strong>
@@ -120,19 +119,19 @@ $(".elm").hover(
                     </li>
                     <li class="mr-3 ">
                         <a class="flex justify-center px-3 py-3 transition duration-500 ease-in-out border-2 border-teal-900 rounded-full shadow-xl text-ddteal bg-lteal hover:bg-teal-800 "
-                            href="#disease "><strong>
+                            href="/pages/currenttopic.html"><strong>
                                 current
                                 
                                 topic</strong></a>
                     </li>
                     <li class="mr-3 ">
                         <a class="flex justify-center px-3 py-3 transition duration-500 ease-in-out border-2 border-teal-900 rounded-full shadow-xl text-ddteal bg-lteal hover:bg-teal-800 "
-                            href="/blog "><strong>
+                            href="/pages/blog.html "><strong>
                                 visit our blog
                             </strong></a>
                     <li class="mr-3 ">
                         <a class="flex justify-center px-3 py-3 transition duration-500 ease-in-out border-2 border-teal-900 rounded-full shadow-xl text-ddteal bg-lteal hover:bg-teal-800 "
-                            href="#team "><strong>
+                            href="/pages/theteam.html"><strong>
                                 meet
                                 the
                                 team
@@ -170,7 +169,7 @@ $(".elm").hover(
         if (y > 100) {
         $('.menu').fadeIn();
         } else {
-        $('.menu').fadeOut(0.5);          
+        $('.menu').fadeOut();          
         }});
         
         $(".elm").hover(
@@ -291,7 +290,7 @@ $(".elm").hover(
             </li>
         </ul-->
     </nav>
-    <div class="bg-white bg-opacity-50">
+    <div class="bg-vlteal-100">
         <div style="z-index: 10000;"
         class="flex justify-center bg-fixed bg-no-repeat pt-28 h-400 ">
         
@@ -311,7 +310,7 @@ $(".elm").hover(
         </p>
         </div><div style="z-index: 10000;"
         class="top-0 flex justify-center ">
-        <p class="justify-center mb-10 text-4xl font-extrabold stroke-1 text-ddteal str font-body font-b" >
+        <p class="justify-center text-4xl font-extrabold stroke-1 mb-36 text-ddteal str font-body font-b" >
             <br>
             learn┃teach┃empower
             <br>
@@ -319,10 +318,17 @@ $(".elm").hover(
         </div>
     </div>
 </div>
-<div class="bg-white bg-opacity-50">
+
+<script>
+$(document).ready(function(){
+    $('.slide').slideDown(1000);
+});
+</script>
+
+<div class="bg-opacity-50 bg-vlteal-500 pt-28">
     <div class="grid items-center grid-cols-2 mx-10 border-2 border-teal-900 rounded-full shadow-xl by-10 justify-items-center bg-lteal row">
         <!--left side-->    
-            <div class="w-full h-full">
+            <div class="w-full h-full " id="slide">
             <div class="flex items-center justify-center w-full h-full col-auto px-8 text-6xl font-extrabold text-center text-white rounded-full font-body column border-lteal border-2xl bg-ddteal">
                 what we do
             </div>
