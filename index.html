@@ -41,7 +41,22 @@
             student-led nonprofit based in San Jose,
             California." />
             <meta property="og:image" content="images/favicon.png" />
-
+<!-- Social-feed css -->
+<link href="bower_components/social-feed/css/jquery.socialfeed.css" rel="stylesheet" type="text/css">
+<!-- font-awesome for social network icons -->
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+<!-- jQuery -->
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<!-- Codebird.js - required for TWITTER -->
+<script src="bower_components/codebird-js/codebird.js"></script>
+<!-- doT.js for rendering templates -->
+<script src="bower_components/doT/doT.min.js"></script>
+<!-- Moment.js for showing "time ago" and/or "date"-->
+<script src="bower_components/moment/min/moment.min.js"></script>
+<!-- Moment Locale to format the date to your language (eg. italian lang)-->
+<script src="bower_components/moment/locale/it.js"></script>
+<!-- Social-feed js -->
+<script src="bower_components/social-feed/js/jquery.socialfeed.js"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-164572552-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -59,6 +74,22 @@
     </script>
     <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
     <link rel="stylesheet" href="style.css" />
+    <script>
+    $(document).ready(function(){
+        $('.social-feed-container').socialfeed({
+            // INSTAGRAM
+            instagram:{
+                accounts: ['@edupod.inc'],  //Array: Specify a list of accounts from which to pull posts
+                limit: 3,                                    //Integer: max number of posts to load
+                client_id: 'YOUR_INSTAGRAM_CLIENT_ID',       //String: Instagram client id (optional if using access token)
+                access_token: 'YOUR_INSTAGRAM_ACCESS_TOKEN' //String: Instagram access token
+            },
+
+            // GENERAL SETTINGS
+            length:400                                      //Integer: For posts with text longer than this length, show an ellipsis.
+        });
+    });
+</script>
 </head>
 
 <script>
@@ -169,7 +200,7 @@ $(".elm").hover(
         if (y > 100) {
         $('.menu').fadeIn();
         } else {
-        $('.menu').fadeOut();          
+        $('.menu').fadeOut(duration='1');          
         }});
         
         $(".elm").hover(
@@ -393,6 +424,8 @@ $(document).ready(function(){
             </div>
     </div>
     </div>
+    <div class="social-feed-container"></div>
+
 </body>
 
 </html>
