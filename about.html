@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:fb="http://ogp.me/ns/fb#">
+<!--html class="spectrum spectrum--medium spectrum--light" lang="html"-->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+
+<head>
+    <!--load jQuery-->
+    <script src="jquery.min.js"></script>
+    <!--load jQuery UI-->
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <!--load AoS-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#facebook').on('click', function () {
+                window.open('https://www.facebook.com/edupod.organization', );
+                console.log("opened facebook link");
+            });
+        });
+        $(document).ready(function () {
+            $('#twitter').on('click', function () {
+                window.open('https://twitter.com', '_blank');
+                console.log("opened twitter link");
+            });
+        });
+        $(document).ready(function () {
+            $('#instagram').on('click', function () {
+                window.open('https://www.instagram.com/edupod.inc/', '_blank');
+
+                console.log("opened instagram link");
+            });
+        });
+        $(document).ready(function() {
+        $('.menu').fadeOut(1);
+    });
+    </script>
+    <title>edupod - a student-led nonprofit</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="The official site of edupod - a
+            student-led nonprofit based in San Jose,
+            California." />
+            <meta property="og:image" content="images/favicon.png" />
+<!-- Social-feed css -->
+<link href="bower_components/social-feed/css/jquery.socialfeed.css" rel="stylesheet" type="text/css">
+<!-- font-awesome for social network icons -->
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+<!-- jQuery -->
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<!-- Codebird.js - required for TWITTER -->
+<script src="bower_components/codebird-js/codebird.js"></script>
+<!-- doT.js for rendering templates -->
+<script src="bower_components/doT/doT.min.js"></script>
+<!-- Moment.js for showing "time ago" and/or "date"-->
+<script src="bower_components/moment/min/moment.min.js"></script>
+<!-- Moment Locale to format the date to your language (eg. italian lang)-->
+<script src="bower_components/moment/locale/it.js"></script>
+<!-- Social-feed js -->
+<script src="bower_components/social-feed/js/jquery.socialfeed.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-164572552-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+        gtag("set", {
+            user_id: "USER_ID",
+        }); // Set the user ID using signed-in user_id.
+        gtag("config", "UA-164572552-1", {
+            user_id: "USER_ID",
+        });
+    </script>
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+    <link rel="stylesheet" href="style.css" />
+    <script>
+    $(document).ready(function(){
+        $('.social-feed-container').socialfeed({
+            // INSTAGRAM
+            instagram:{
+                accounts: ['@edupod.inc'],  //Array: Specify a list of accounts from which to pull posts
+                limit: 3,                                    //Integer: max number of posts to load
+                client_id: 'YOUR_INSTAGRAM_CLIENT_ID',       //String: Instagram client id (optional if using access token)
+                access_token: 'YOUR_INSTAGRAM_ACCESS_TOKEN' //String: Instagram access token
+            },
+
+            // GENERAL SETTINGS
+            length:400                                      //Integer: For posts with text longer than this length, show an ellipsis.
+        });
+    });
+</script>
+</head>
+
+<script>
+$(".elm").hover(
+    function(){ $(this).addClass('hover') },
+    function(){ $(this).removeClass('hover') }
+)
+</script>
+<style>
+    @keyframes doaflip{
+        to {
+            transform: rotate(360deg);
+        }
+    }
+    .hover{
+        animation-name: doaflip;
+        animation-duration: 2s;
+    }
+</style>
+<body class="bg-fixed bg-opacity-50 bg-vlteal"> <!---style="background-image: url(/images/logo.svg); background-repeat:no-repeat; background-position: center;" --->
+    <div class="w-full ">
+        <header class="flex items-center justify-between p-2 shadow-xl bg-vlteal ">
+
+            <div class="flex items-center w-auto ml-8" id="elm" >
+                <button type="button" class="elm hover:bg-teal-800"><a
+                        href="/index.html"></button>
+                <img title="home page" src="images/ctrlogonopillsm.svg "
+                    class="transition duration-500 ease-in-out border-2 border-teal-900 rounded-full shadow-2xl hover:bg-teal-800"
+                    width="300 " height="45 " />
+            <div class="container flex items-center justify-center py-2 space-x-1 hover:animate-spin">
+
+                <button name="twitter"
+                    class="px-3 py-2 transition duration-500 ease-in-out border-2 border-teal-900 rounded-full shadow-2xl hover:bg-teal-800 "
+                    type="button ">
+                    <img src="images/twtr.svg" id="twitter" class="py-1 shadow-2xl" height="16" width="16"></button>
+                <button name="instagram"
+                    class="px-3 py-2 transition duration-500 ease-in-out border-2 border-teal-900 rounded-full shadow-2xl hover:bg-teal-800 "
+                    type="button " href="instagram.com ">
+                    <img src="images/inst.svg" id="instagram" class="py-1 shadow-2xl" height="16" width="16"></button>
+                <button name="facebook"
+                    class="px-3 py-2 transition duration-500 ease-in-out border-2 border-teal-900 rounded-full shadow-2xl hover:bg-teal-800 "
+                    type="button " href="facebook.com ">
+                    <img src="images/fcbk.svg" id="facebook" class="py-1 shadow-2xl" height="16" width="16"></button>
+            </div>
+            </div>
+            <script>
+                $('.icons').animate({left:0})
+            </script>
+
+            <nav style="z-index: 10000;" class="top-0 flex justify-end w-full p-2 pr-40 m-2 "  id="slider">
+                <ul class="flex items-center justify-center flex-1 list-reset md:flex-none ">
+
+                    <li class="mr-3 ">
+                        <a class="flex justify-center px-3 py-3 transition duration-500 ease-in-out border-2 border-teal-900 rounded-full shadow-xl text-ddteal bg-lteal hover:bg-teal-800 "
+                            href="#whatwedo "><strong>
+                                what we do
+                            </strong></a>
+                    </li>
+                    <li class="mr-3 ">
+                        <a class="flex justify-center px-3 py-3 transition duration-500 ease-in-out border-2 border-teal-900 rounded-full shadow-xl text-ddteal bg-lteal hover:bg-teal-800 "
+                            href="/pages/currenttopic.html"><strong>
+                                current
+                                
+                                topic</strong></a>
+                    </li>
+                    <li class="mr-3 ">
+                        <a class="flex justify-center px-3 py-3 transition duration-500 ease-in-out border-2 border-teal-900 rounded-full shadow-xl text-ddteal bg-lteal hover:bg-teal-800 "
+                            href="/pages/blog.html "><strong>
+                                visit our blog
+                            </strong></a>
+                    <li class="mr-3 ">
+                        <a class="flex justify-center px-3 py-3 transition duration-500 ease-in-out border-2 border-teal-900 rounded-full shadow-xl text-ddteal bg-lteal hover:bg-teal-800 "
+                            href="/pages/theteam.html"><strong>
+                                meet
+                                the
+                                team
+                            </strong></a>
+                    </li>
+                    </li>
+                    <li class="mr-3 ">
+                        <a class="flex justify-center px-3 py-3 transition duration-500 ease-in-out border-2 border-teal-900 rounded-full shadow-xl text-ddteal bg-lteal hover:bg-teal-800 "
+                            href="/pages/donate "><strong>
+                                donate
+                            </strong></a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <!--ul class="flex items-center flex-1 list-reset md:flex-end ">
+            <li class="mr-3 ">
+                <a class="flex px-3 py-3 border-2 border-teal-900 rounded-full text-ddteal " href="# ">to
+                            top</a>
+            </li>
+        </ul-->
+    </nav>
+</header>
+        
+
+    <script>
+        //script to shrink navbar on scroll
+
+        var num = 80; //number of pixels before modifying styles
+        var shrink = false; //shrink div
+        
+        $(document).scroll(function() {
+        var y = $(this).scrollTop();
+        if (y > 100) {
+        $('.menu').fadeIn();
+        } else {
+        $('.menu').fadeOut(duration='1');          
+        }});
+        
+        $(".elm").hover(
+        function(){ $(this).addClass('hover') },
+        function(){ $(this).removeClass('hover') }
+        )
+        
+        $(window).bind('scroll', function () {
+            if ($(window).scrollTop() > num) {
+                $('.menu').addClass('fixed');
+                $('.menu').animate({
+                    width: '50%' [30]
+                });
+            } else {
+                $('.menu').removeClass('fixed');
+                $('.menu').animate({
+                    width: '100%' [30]
+                })
+            }
+        });
+        jQuery('document').ready(function () {
+            if (jQuery('.right').length) {
+
+                jQuery(window).scroll(function () {
+                    var win_width = jQuery(window).width();
+                    if (win_width > 1200) {
+                        var topoffset = jQuery('.right').offset().top;
+                        var leftoffset = jQuery('.right').offset().left;
+
+                        var botoffset = jQuery('footer').offset().top;
+
+                        var block_height = jQuery('.floating-block').height();
+                        botoffset = botoffset - block_height - 250;
+                        topoffset = topoffset - 200;
+
+                        var sTop = jQuery(window).scrollTop();
+
+                        var top_fix_to_abs = botoffset - topoffset;
+                        if (sTop < topoffset) {
+                            jQuery('.floating-block').removeClass('curr_fix');
+                            jQuery('.floating-block').removeClass('right_fix');
+                            jQuery('.floating-block').css('top', "");
+                            jQuery('.floating-block').css('left', "");
+                            console.log('h1');
+                        }
+                        if (sTop > topoffset && sTop < botoffset) {
+                            jQuery('.floating-block').addClass('curr_fix');
+                            jQuery('.floating-block').addClass('right_fix').css('left', leftoffset);
+                            jQuery('.floating-block').css('top', "");
+                            console.log('h2');
+                        }
+                        if (sTop >= botoffset && sTop > topoffset) {
+                            jQuery('.floating-block').removeClass('curr_fix');
+                            jQuery('.floating-block').css('left', 0);
+                            jQuery('.floating-block').css('top', top_fix_to_abs);
+                            console.log('h3');
+                            //return;
+
+                        }
+                    }
+                });
+            }
+});
+    </script>
+    <nav style="z-index: 10000;"
+        class="top-0 flex justify-center w-full p-2 pr-40 m-2 bg-white bg-opacity-25 border-2 rounded-full shadow-2xl pb-7 menu"
+        id="slider">
+                <img title="home page" src="images/ctrlogonopillsm.svg" 
+                    class="w-3/12 transition duration-500 ease-in-out border-2 border-teal-900 rounded-full shadow-2xl bg-lteal lteal hover:bg-teal-800"
+                    />
+                </div>
+        <div class="flex flex-wrap items-center justify-center mx-auto ">
+            <div class="flex content-center justify-center w-full pt-2 md:justify-center ">
+                <ul class="flex items-center justify-center flex-1 list-reset md:flex-none ">
+                    <div class="flex items-center w-auto">
+
+                    <li class="mr-3 ">
+                        <a class="flex justify-center px-3 py-3 transition duration-500 ease-in-out border-2 border-teal-900 rounded-full shadow-xl text-ddteal bg-lteal hover:bg-teal-800 "
+                            href="#whatwedo "><strong>
+                                what we do
+                            </strong></a>
+                    </li>
+                    <li class="mr-3 ">
+                        <a class="flex justify-center inline-block px-3 py-3 transition duration-500 ease-in-out border-2 border-teal-900 rounded-full shadow-xl text-ddteal bg-lteal hover:bg-teal-800 "
+                            href="#disease "><strong>
+                                current
+                                
+                                topic</strong></a>
+                    </li>
+                    <li class="mr-3 ">
+                        <a class="flex justify-center inline-block px-3 py-3 transition duration-500 ease-in-out border-2 border-teal-900 rounded-full shadow-xl text-ddteal bg-lteal hover:bg-teal-800 "
+                            href="/blog "><strong>
+                                visit our blog
+                            </strong></a>
+                    <li class="mr-3 ">
+                        <a class="flex justify-center inline-block px-3 py-3 transition duration-500 ease-in-out border-2 border-teal-900 rounded-full shadow-xl text-ddteal bg-lteal hover:bg-teal-800 "
+                            href="#team "><strong>
+                                meet
+                                the
+                                team
+                            </strong></a>
+                    </li>
+                    </li>
+                    <li class="mr-3 ">
+                        <a class="flex justify-center inline-block px-3 py-3 transition duration-500 ease-in-out border-2 border-teal-900 rounded-full shadow-xl text-ddteal bg-lteal hover:bg-teal-800 "
+                            href="/pages/donate "><strong>
+                                donate
+                            </strong></a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <!--ul class="flex items-center flex-1 list-reset md:flex-end ">
+            <li class="mr-3 ">
+                <a class="flex inline-block px-3 py-3 border-2 border-teal-900 rounded-full text-ddteal " href="# ">to
+                            top</a>
+            </li>
+        </ul-->
+    </nav>
+<figure class="h-full p-8 mx-20 my-20 bg-gray-100 rounded-full md:flex bg-dlteal md:p-0">
+  <img class="w-32 h-32 mx-auto rounded-full md:w-48 md:h-auto md:rounded-none" src="/images/banner.svg" alt="" width="384" height="512">
+  <div class="pt-6 space-y-4 text-center md:p-8 md:text-left">
+    <blockquote>
+      <p class="text-lg font-semibold">
+I am Khushboo Teotia, the Founder of Edupod. My passion for the medical field and my interest 
+<br>
+to improve my community has driven me to create such an organization. I have a genuine wish to help
+<br>
+ the people around me while also creating a change. I strongly believe in projecting your own opinions 
+ <br>
+because it defines  your personality and thoughts.  
+      </p>
+    </blockquote>
+    <figcaption class="font-medium">
+      <div class="text-cyan-600">
+        Khushboo Teotia
+      </div>
+      <div class="text-gray-500">
+        Founder, Edupod
+      </div>
+    </figcaption>
+  </div>
+</figure>
+
+<figure class="h-full p-8 mx-20 my-20 rounded-full md:flex bg-dlteal md:p-0">
+  <div class="pt-6 space-y-4 text-center md:p-8 md:text-left">
+    <blockquote>
+      <p class="text-lg font-semibold">
+        “Tailwind CSS is the only framework that I've seen scale
+        on large teams. It’s easy to customize, adapts to any design,
+        and the build size is tiny.”
+      </p>
+    </blockquote>
+    <figcaption class="font-medium">
+      <div class="text-cyan-600">
+        Sarah Dayan
+      </div>
+      <div class="text-gray-500">
+        Staff Engineer, Algolia
+      </div>
+    </figcaption>
+  </div>
+  <img class="w-32 h-32 mx-auto rounded-full md:w-48 md:h-auto md:rounded-none" src="/images/banner.svg" alt="" width="384" height="512">
+  
+</figure>
+
+<figure class="h-full p-8 mx-20 my-20 rounded-full md:flex bg-dlteal md:p-0">
+  <img class="w-32 h-32 mx-auto rounded-full md:w-48 md:h-auto md:rounded-none" src="/images/banner.svg" alt="" width="384" height="512">
+  <div class="pt-6 space-y-4 text-center md:p-8 md:text-left">
+    <blockquote>
+      <p class="text-lg font-semibold">
+I am Khushboo Teotia, the Founder of Edupod. My passion for the medical field and my interest 
+<br>
+to improve my community has driven me to create such an organization. I have a genuine wish to help
+<br>
+ the people around me while also creating a change. I strongly believe in projecting your own opinions 
+ <br>
+because it defines  your personality and thoughts.  
+      </p>
+    </blockquote>
+    <figcaption class="font-medium">
+      <div class="text-cyan-600">
+        Khushboo Teotia
+      </div>
+      <div class="text-gray-500">
+        Founder, Edupod
+      </div>
+    </figcaption>
+  </div>
+</figure>
+
+</body>

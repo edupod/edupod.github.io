@@ -1,6 +1,11 @@
 module.exports = {
+    darkMode: 'media',
     theme: {
         extend: {
+            backgroundImage: theme => ({
+                'microscope': "url('/images/microscope.png')",
+                'vials' : "url('/inages/vials.png')",
+            }),
             colors: {
                 baseteal: '#9cdbff',
                 dlteal: '#4796a1',
