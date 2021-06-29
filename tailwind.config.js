@@ -1,10 +1,20 @@
 module.exports = {
     darkMode: 'media',
     theme: {
+        screens: {
+      'sm': '640px',
+      // => @media (min-width: 640px) { ... }
+
+      'md': '720px',
+      // => @media (min-width: 1024px) { ... }
+
+      'lg': '1024px',
+      // => @media (min-width: 1280px) { ... }
+    },
         extend: {
             backgroundImage: theme => ({
                 'microscope': "url('/images/microscope.png')",
-                'vials' : "url('/inages/vials.png')",
+                'vials' : "url('/images/vials.png')",
             }),
             colors: {
                 baseteal: '#9cdbff',

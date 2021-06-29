@@ -109,7 +109,7 @@ $(".elm").hover(
         animation-duration: 2s;
     }
 </style>
-<body class="bg-fixed bg-white bg-opacity-50"> <!---style="background-image: url(/images/logo.svg); background-repeat:no-repeat; background-position: center;" --->
+<body class="bg-fixed bg-opacity-50 bg-vlteal"> <!---style="background-image: url(/images/logo.svg); background-repeat:no-repeat; background-position: center;" --->
     <div class="w-full ">
         <header class="flex items-center justify-between p-2 shadow-xl bg-vlteal ">
 
@@ -139,7 +139,7 @@ $(".elm").hover(
                 $('.icons').animate({left:0})
             </script>
 
-            <nav style="z-index: 10000;" class="top-0 flex justify-end w-full p-2 pr-40 m-2 "  id="slider">
+            <nav style="z-index: 10000;" class="top-0 flex justify-end w-full p-2 pl-40 m-2 md:p-0 "  id="slider">
                 <ul class="flex items-center justify-center flex-1 list-reset md:flex-none ">
 
                     <li class="mr-3 ">
@@ -266,13 +266,13 @@ $(".elm").hover(
 });
     </script>
     <nav style="z-index: 10000;"
-        class="top-0 flex justify-center w-full p-2 pr-40 m-2 bg-white bg-opacity-25 border-2 rounded-full shadow-2xl pb-7 menu"
+        class="top-0 flex justify-end w-full mr-10 bg-white bg-opacity-25 border-2 rounded-full shadow-2xl md:pl-0 md:ml-10 md:p-2 md:pr-40 md:justify-center menu"
         id="slider">
                 <img title="home page" src="images/ctrlogonopillsm.svg" 
                     class="w-3/12 transition duration-500 ease-in-out border-2 border-teal-900 rounded-full shadow-2xl bg-lteal lteal hover:bg-teal-800"
                     />
                 </div>
-        <div class="flex flex-wrap items-center justify-center mx-auto ">
+        <div class="flex flex-wrap items-center justify-center pl-20 mx-auto ">
             <div class="flex content-center justify-center w-full pt-2 md:justify-center ">
                 <ul class="flex items-center justify-center flex-1 list-reset md:flex-none ">
                     <div class="flex items-center w-auto">
@@ -374,7 +374,7 @@ $(document).ready(function(){
             </div>
     </div>
 
-    <div class="grid items-center grid-cols-2 mx-10 my-10 border-2 border-teal-900 rounded-full shadow-xl justify-items-center bg-lteal row" >
+    <div class="grid items-center grid-cols-2 mx-10 my-10 border-2 border-teal-900 rounded-full shadow-xl sm:pl-10 sm:ml-5 justify-items-center bg-lteal row" >
         <!--left side-->    
         <div class="col-auto px-8 py-10 text-2xl rounded-full font-body column ">
                 We are a nonprofit based in San Jose, California. Started by high school students, we 
@@ -407,7 +407,7 @@ $(document).ready(function(){
             </div>
     </div>
 
-    <div class="flex grid items-center grid-cols-2 mx-10 my-10 border-2 border-teal-900 rounded-full shadow-xl justify-items-center bg-lteal row">
+    <div class="flex grid items-center grid-cols-2 mx-10 my-10 border-2 border-teal-900 rounded-full shadow-xl sm:pl-10 sm:ml-5 justify-items-center bg-lteal row">
         <!--left side-->    
         <div class="col-auto px-8 py-10 text-2xl rounded-full font-body column ">
                 We are a nonprofit based in San Jose, California. Started by high school students, we 
