@@ -15,6 +15,7 @@ module.exports = {
             backgroundImage: theme => ({
                 'microscope': "url('/images/microscope.png')",
                 'vials' : "url('/images/vials.png')",
+                'croppedlogo': "url('/images/croppedlogowmic.png')",
             }),
             colors: {
                 baseteal: '#9cdbff',
