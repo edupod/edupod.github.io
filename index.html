@@ -109,8 +109,9 @@ $(".elm").hover(
         animation-duration: 2s;
     }
 </style>
-<body class="bg-fixed bg-opacity-50 bg-vlteal"> <!---style="background-image: url(/images/logo.svg); background-repeat:no-repeat; background-position: center;" --->
+<body class="bg-fixed bg-opacity-50 ">
     <div class="w-full ">
+        
         <header class="flex items-center justify-between p-2 shadow-xl bg-vlteal ">
 
             <div class="flex items-center w-auto ml-8" id="elm" >
@@ -200,7 +201,7 @@ $(".elm").hover(
         if (y > 100) {
         $('.menu').fadeIn();
         } else {
-        $('.menu').fadeOut(duration='1');          
+        $('.menu').fadeOut(10);          
         }});
         
         $(".elm").hover(
@@ -266,7 +267,7 @@ $(".elm").hover(
 });
     </script>
     <nav style="z-index: 10000;"
-        class="top-0 flex justify-end w-full mr-10 bg-white bg-opacity-25 border-2 rounded-full shadow-2xl md:pl-0 md:ml-10 md:p-2 md:pr-40 md:justify-center menu"
+        class="top-0 flex justify-center w-9/12 mt-5 ml-10 bg-white bg-opacity-25 border-2 rounded-full shadow-2xl md:justify-center menu"
         id="slider">
                 <img title="home page" src="images/ctrlogonopillsm.svg" 
                     class="w-3/12 transition duration-500 ease-in-out border-2 border-teal-900 rounded-full shadow-2xl bg-lteal lteal hover:bg-teal-800"
@@ -321,7 +322,8 @@ $(".elm").hover(
             </li>
         </ul-->
     </nav>
-    <div class="bg-vlteal-100">
+    <div class="items-center justify-center justify-items-center">
+    <div class="bg-white bg-center bg-no-repeat bg-auto" style="background-image: url(/images/croppedlogowmic.png);">
         <div style="z-index: 10000;"
         class="flex justify-center bg-fixed bg-no-repeat pt-28 h-400 ">
         
@@ -347,6 +349,7 @@ $(".elm").hover(
             <br>
         </p>
         </div>
+    </div>
     </div>
 </div>
 
