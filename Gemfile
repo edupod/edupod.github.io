@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 gem 'middleman', '~> 4.2'
 gem 'middleman-blog'
 gem 'middleman-syntax'
-gem 'redcarpet', '~> 3.3', '>= 3.3.3'
+gem 'redcarpet', '~> 3.5'
 
 # For feed.xml.builder
 gem 'builder', '~> 3.0'
