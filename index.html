@@ -32,7 +32,7 @@
             });
         });
         $(document).ready(function() {
-        $('.menu').fadeOut(1);
+        $('.navbar').fadeOut(1);
     });
     </script>
     <title>edupod - a student-led nonprofit</title>
@@ -92,46 +92,30 @@
 </script>
 </head>
 
-<script>
-$(".elm").hover(
-    function(){ $(this).addClass('hover') },
-    function(){ $(this).removeClass('hover') }
-)
-</script>
-<style>
-    @keyframes doaflip{
-        to {
-            transform: rotate(360deg);
-        }
-    }
-    .hover{
-        animation-name: doaflip;
-        animation-duration: 2s;
-    }
+
 </style>
-<body class="grid bg-fixed bg-opacity-50 justify-items-stretch ">
-    <div class="w-full ">
-        
-        <header class="flex items-center justify-between p-2 shadow-xl bg-vlteal ">
+<body class="bg-fixed bg-opacity-50" >
+<div class="w-full ">
+<header class="flex items-center justify-between p-2 shadow-xl bg-vlteal ">
 
             <div class="flex items-center w-auto ml-8" id="elm" >
                 <button type="button" class="elm hover:bg-teal-800"><a
                         href="/index.html"></button>
                 <img title="home page" src="images/ctrlogonopillsm.svg "
-                    class="transition duration-500 ease-in-out border-2 border-teal-900 rounded-full shadow-2xl hover:bg-teal-800"
+                    class="transition duration-500 ease-in-out border-2 border-teal-900 shadow-2xl hover:bg-teal-800"
                     width="300 " height="45 " />
             <div class="container flex items-center justify-center py-2 space-x-1 hover:animate-spin">
 
                 <button name="twitter"
-                    class="px-3 py-2 transition duration-500 ease-in-out border-2 border-teal-900 rounded-full shadow-2xl hover:bg-teal-800 "
+                    class="px-3 py-2 transition duration-500 ease-in-out border-2 border-teal-900 shadow-2xl hover:bg-teal-800 "
                     type="button ">
                     <img src="images/twtr.svg" id="twitter" class="py-1 shadow-2xl" height="16" width="16"></button>
                 <button name="instagram"
-                    class="px-3 py-2 transition duration-500 ease-in-out border-2 border-teal-900 rounded-full shadow-2xl hover:bg-teal-800 "
+                    class="px-3 py-2 transition duration-500 ease-in-out border-2 border-teal-900 shadow-2xl hover:bg-teal-800 "
                     type="button " href="instagram.com ">
                     <img src="images/inst.svg" id="instagram" class="py-1 shadow-2xl" height="16" width="16"></button>
                 <button name="facebook"
-                    class="px-3 py-2 transition duration-500 ease-in-out border-2 border-teal-900 rounded-full shadow-2xl hover:bg-teal-800 "
+                    class="px-3 py-2 transition duration-500 ease-in-out border-2 border-teal-900 shadow-2xl hover:bg-teal-800 "
                     type="button " href="facebook.com ">
                     <img src="images/fcbk.svg" id="facebook" class="py-1 shadow-2xl" height="16" width="16"></button>
             </div>
@@ -144,25 +128,25 @@ $(".elm").hover(
                 <ul class="flex items-center justify-center flex-1 list-reset md:flex-none ">
 
                     <li class="mr-3 ">
-                        <a class="flex justify-center px-3 py-3 transition duration-500 ease-in-out border-2 border-teal-900 rounded-full shadow-xl text-ddteal bg-lteal hover:bg-teal-800 "
+                        <a class="flex justify-center px-3 py-3 transition duration-500 ease-in-out border-2 border-teal-900 shadow-xl text-ddteal bg-lteal hover:bg-teal-800 "
                             href="#whatwedo "><strong>
                                 what we do
                             </strong></a>
                     </li>
                     <li class="mr-3 ">
-                        <a class="flex justify-center px-3 py-3 transition duration-500 ease-in-out border-2 border-teal-900 rounded-full shadow-xl text-ddteal bg-lteal hover:bg-teal-800 "
+                        <a class="flex justify-center px-3 py-3 transition duration-500 ease-in-out border-2 border-teal-900 shadow-xl text-ddteal bg-lteal hover:bg-teal-800 "
                             href="/pages/currenttopic.html"><strong>
                                 current
                                 
                                 topic</strong></a>
                     </li>
                     <li class="mr-3 ">
-                        <a class="flex justify-center px-3 py-3 transition duration-500 ease-in-out border-2 border-teal-900 rounded-full shadow-xl text-ddteal bg-lteal hover:bg-teal-800 "
+                        <a class="flex justify-center px-3 py-3 transition duration-500 ease-in-out border-2 border-teal-900 shadow-xl text-ddteal bg-lteal hover:bg-teal-800 "
                             href="/blog.html "><strong>
                                 visit our blog
                             </strong></a>
                     <li class="mr-3 ">
-                        <a class="flex justify-center px-3 py-3 transition duration-500 ease-in-out border-2 border-teal-900 rounded-full shadow-xl text-ddteal bg-lteal hover:bg-teal-800 "
+                        <a class="flex justify-center px-3 py-3 transition duration-500 ease-in-out border-2 border-teal-900 shadow-xl text-ddteal bg-lteal hover:bg-teal-800 "
                             href="/about.html"><strong>
                                 meet
                                 the
@@ -171,23 +155,23 @@ $(".elm").hover(
                     </li>
                     </li>
                     <li class="mr-3 ">
-                        <a class="flex justify-center px-3 py-3 transition duration-500 ease-in-out border-2 border-teal-900 rounded-full shadow-xl text-ddteal bg-lteal hover:bg-teal-800 "
+                        <a class="flex justify-center px-3 py-3 transition duration-500 ease-in-out border-2 border-teal-900 shadow-xl text-ddteal bg-lteal hover:bg-teal-800 "
                             href="/pages/donate "><strong>
                                 donate
                             </strong></a>
                     </li>
                 </ul>
-            </div>
-
-        </div>
+            </nav>
+</header>
+</div>
         <!--ul class="flex items-center flex-1 list-reset md:flex-end ">
             <li class="mr-3 ">
-                <a class="flex px-3 py-3 border-2 border-teal-900 rounded-full text-ddteal " href="# ">to
+                <a class="flex px-3 py-3 border-2 border-teal-900 text-ddteal " href="# ">to
                             top</a>
             </li>
         </ul-->
-    </nav>
-</header>
+
+
         
 
     <script>
@@ -199,105 +183,52 @@ $(".elm").hover(
         $(document).scroll(function() {
         var y = $(this).scrollTop();
         if (y > 100) {
-        $('.menu').fadeIn();
+        $('.navbar').fadeIn();
         } else {
-        $('.menu').fadeOut(10);          
+        $('.navbar').fadeOut(10);          
         }});
         
-        $(".elm").hover(
-        function(){ $(this).addClass('hover') },
-        function(){ $(this).removeClass('hover') }
-        )
-        
+
         $(window).bind('scroll', function () {
-            if ($(window).scrollTop() > num) {
-                $('.menu').addClass('fixed');
-                $('.menu').animate({
-                    width: '50%' [30]
-                });
+            if ($(window).scrollTop() > num) { 
+            $('.navbar').addClass('fixed');
+
             } else {
-                $('.menu').removeClass('fixed');
-                $('.menu').animate({
-                    width: '100%' [30]
-                })
+
             }
         });
-        jQuery('document').ready(function () {
-            if (jQuery('.right').length) {
-
-                jQuery(window).scroll(function () {
-                    var win_width = jQuery(window).width();
-                    if (win_width > 1200) {
-                        var topoffset = jQuery('.right').offset().top;
-                        var leftoffset = jQuery('.right').offset().left;
-
-                        var botoffset = jQuery('footer').offset().top;
-
-                        var block_height = jQuery('.floating-block').height();
-                        botoffset = botoffset - block_height - 250;
-                        topoffset = topoffset - 200;
-
-                        var sTop = jQuery(window).scrollTop();
-
-                        var top_fix_to_abs = botoffset - topoffset;
-                        if (sTop < topoffset) {
-                            jQuery('.floating-block').removeClass('curr_fix');
-                            jQuery('.floating-block').removeClass('right_fix');
-                            jQuery('.floating-block').css('top', "");
-                            jQuery('.floating-block').css('left', "");
-                            console.log('h1');
-                        }
-                        if (sTop > topoffset && sTop < botoffset) {
-                            jQuery('.floating-block').addClass('curr_fix');
-                            jQuery('.floating-block').addClass('right_fix').css('left', leftoffset);
-                            jQuery('.floating-block').css('top', "");
-                            console.log('h2');
-                        }
-                        if (sTop >= botoffset && sTop > topoffset) {
-                            jQuery('.floating-block').removeClass('curr_fix');
-                            jQuery('.floating-block').css('left', 0);
-                            jQuery('.floating-block').css('top', top_fix_to_abs);
-                            console.log('h3');
-                            //return;
-
-                        }
-                    }
-                });
-            }
-});
     </script>
+
     <nav style="z-index: 10000;"
-         class="container top-0 flex items-center w-full p-2 pr-40 mx-auto mt-5 bg-white bg-opacity-25 border-2 rounded-full shadow-2xl md:ml-auto place-items-end pb-7 menu"
+        class="container top-0 flex w-10/12 p-2 pr-0 mt-0 ml-0 mr-10 bg-white bg-opacity-25 border-2 shadow-2xl justify-evenly overflow-clip md:mt-3 md:mx-5 md:pr-10 md:w-max pb-7 navbar"
         id="slider">
                 <img title="home page" src="images/ctrlogonopillsm.svg" 
-                    class="items-center w-3/12 mr-12 transition duration-500 ease-in-out border-2 border-teal-900 rounded-full shadow-2xl md:mr-10 bg-lteal lteal hover:bg-teal-800"
-                    />
-                </div>
-        <div class="flex flex-wrap items-center justify-end ml-20 ">
-            <div class="flex content-center justify-center w-full pt-2 md:justify-center ">
-                <ul class="flex items-center justify-center flex-1 list-reset md:flex-none ">
+                    class="items-center w-3/12 mr-0 transition duration-500 ease-in-out border-2 border-teal-900 shadow-2xl md:mr-12 bg-lteal lteal hover:bg-teal-800"/>
+        <div class="flex items-center justify-end w-auto ml-0 md:ml-20">
+            <div class="flex content-center justify-center w-auto pt-2 md:justify-center ">
+                <ul class="items-center justify-center flex-none mr-16 overflow-hidden">
                     <div class="flex items-center w-auto">
 
                     <li class="mr-3 ">
-                        <a class="flex justify-center px-3 py-3 transition duration-500 ease-in-out border-2 border-teal-900 rounded-full shadow-xl text-ddteal bg-lteal hover:bg-teal-800 "
+                        <a class="flex justify-center px-3 py-3 transition duration-500 ease-in-out border-2 border-teal-900 shadow-xl text-ddteal bg-lteal hover:bg-teal-800 "
                             href="#whatwedo "><strong>
                                 what we do
                             </strong></a>
                     </li>
                     <li class="mr-3 ">
-                        <a class="flex justify-center inline-block px-3 py-3 transition duration-500 ease-in-out border-2 border-teal-900 rounded-full shadow-xl text-ddteal bg-lteal hover:bg-teal-800 "
+                        <a class="flex justify-center inline-block px-3 py-3 transition duration-500 ease-in-out border-2 border-teal-900 shadow-xl text-ddteal bg-lteal hover:bg-teal-800 "
                             href="#disease "><strong>
                                 current
                                 
                                 topic</strong></a>
                     </li>
                     <li class="mr-3 ">
-                        <a class="flex justify-center inline-block px-3 py-3 transition duration-500 ease-in-out border-2 border-teal-900 rounded-full shadow-xl text-ddteal bg-lteal hover:bg-teal-800 "
+                        <a class="flex justify-center inline-block px-3 py-3 transition duration-500 ease-in-out border-2 border-teal-900 shadow-xl text-ddteal bg-lteal hover:bg-teal-800 "
                             href="/blog "><strong>
                                 visit our blog
                             </strong></a>
                     <li class="mr-3 ">
-                        <a class="flex justify-center inline-block px-3 py-3 transition duration-500 ease-in-out border-2 border-teal-900 rounded-full shadow-xl text-ddteal bg-lteal hover:bg-teal-800 "
+                        <a class="flex justify-center inline-block px-3 py-3 mr-12 transition duration-500 ease-in-out border-2 border-teal-900 shadow-xl md:mr-0 text-ddteal bg-lteal hover:bg-teal-800 "
                             href="/about.html"><strong>
                                 meet
                                 the
@@ -305,22 +236,17 @@ $(".elm").hover(
                             </strong></a>
                     </li>
                     </li>
-                    <li class="mr-3 ">
-                        <a class="flex justify-center inline-block px-3 py-3 transition duration-500 ease-in-out border-2 border-teal-900 rounded-full shadow-xl text-ddteal bg-lteal hover:bg-teal-800 "
+                    <!--li class="mr-3 ">
+                        <a class="flex justify-center inline-block px-3 py-3 transition duration-500 ease-in-out border-2 border-teal-900 shadow-xl text-ddteal bg-lteal hover:bg-teal-800 "
                             href="/pages/donate "><strong>
                                 donate
                             </strong></a>
-                    </li>
-                </ul>
+                    </li-->
+                    </div>
+            </ul>
+            </div>
             </div>
 
-        </div>
-        <!--ul class="flex items-center flex-1 list-reset md:flex-end ">
-            <li class="mr-3 ">
-                <a class="flex inline-block px-3 py-3 border-2 border-teal-900 rounded-full text-ddteal " href="# ">to
-                            top</a>
-            </li>
-        </ul-->
     </nav>
     <div class="items-center justify-center pt-10 bg-fixed bg-center bg-no-repeat bg-opacity-5 bg-repeat-none justify-items-center bg-croppedlogo" style="background-image: url(images/croppedlogowmicopaque.svg);">
     <div class="bg-opacity-50 bg-center bg-no-repeat bg-contain ">
@@ -360,16 +286,16 @@ $(document).ready(function(){
 </script>
 
 <div class="bg-opacity-50 bg-vlteal-500 pt-28">
-    <div class="grid items-center grid-cols-2 mx-10 border-2 border-teal-900 rounded-full shadow-xl by-10 justify-items-center bg-lteal row">
+    <div class="grid items-center grid-cols-2 mx-10 border-2 border-teal-900 shadow-xl by-10 justify-items-center bg-lteal row">
         <!--left side-->    
             <div class="w-full h-full " id="slide">
-            <div class="flex items-center justify-center w-full h-full col-auto px-8 text-6xl font-extrabold text-center text-white bg-fixed rounded-full bg-clip-padding font-body column border-lteal border-2xl " style = "background-image: url(/images/microscope.png)">
+            <div class="flex items-center justify-center w-full h-full col-auto px-8 text-6xl font-extrabold text-center text-white bg-fixed bg-clip-padding font-body column border-lteal border-2xl " style = "background-image: url(/images/microscope.png)">
                 what we do
             </div>
             </div>
         <!--right side-->
         
-            <div class="col-auto px-8 py-10 text-2xl rounded-full font-body column ">
+            <div class="col-auto px-8 py-10 text-2xl font-body column ">
                 We are a nonprofit based in San Jose, California. Started by high school students, we 
                 strive to create intelligent infographics to spread awareness about health that affect 
                 us all. We've been working on our mission since 2019, and since then, we've gathered 
@@ -377,9 +303,9 @@ $(document).ready(function(){
             </div>
     </div>
 
-    <div class="grid items-center grid-cols-2 mx-10 my-10 border-2 border-teal-900 rounded-full shadow-xl sm:pl-10 sm:ml-5 justify-items-center bg-lteal row" >
+    <div class="grid items-center grid-cols-2 mx-10 my-10 border-2 border-teal-900 shadow-xl sm:pl-10 sm:ml-5 justify-items-center bg-lteal row" >
         <!--left side-->    
-        <div class="col-auto px-8 py-10 text-2xl rounded-full font-body column ">
+        <div class="col-auto px-8 py-10 text-2xl font-body column ">
                 We are a nonprofit based in San Jose, California. Started by high school students, we 
                 strive to create intelligent infographics to spread awareness about health that affect 
                 us all. We've been working on our mission since 2019, and since then, we've gathered 
@@ -388,21 +314,21 @@ $(document).ready(function(){
             
         <!--right side-->
             <div class="w-full h-full" id="slide">
-            <div class="flex items-center justify-center w-full h-full col-auto px-8 text-6xl font-extrabold text-center text-white bg-fixed rounded-full font-body column border-lteal border-2xl " style = "background-image: url(/images/vials.png)">
+            <div class="flex items-center justify-center w-full h-full col-auto px-8 text-6xl font-extrabold text-center text-white bg-fixed font-body column border-lteal border-2xl " style = "background-image: url(/images/vials.png)">
             current topic
             </div>
             </div>
     </div>
-    <div class="grid items-center grid-cols-2 mx-10 my-10 border-2 border-teal-900 rounded-full shadow-xl justify-items-center bg-lteal row">
+    <div class="grid items-center grid-cols-2 mx-10 my-10 border-2 border-teal-900 shadow-xl justify-items-center bg-lteal row">
         <!--left side-->    
             <div class="w-full h-full">
-            <div class="flex items-center justify-center w-full h-full col-auto px-8 text-6xl font-extrabold text-center text-white rounded-full font-body column border-lteal border-2xl bg-ddteal">
+            <div class="flex items-center justify-center w-full h-full col-auto px-8 text-6xl font-extrabold text-center text-white font-body column border-lteal border-2xl bg-ddteal">
                 visit our blog
             </div>
             </div>
         <!--right side-->
         
-            <div class="col-auto px-8 py-10 text-2xl rounded-full font-body column ">
+            <div class="col-auto px-8 py-10 text-2xl font-body column ">
                 We are a nonprofit based in San Jose, California. Started by high school students, we 
                 strive to create intelligent infographics to spread awareness about health that affect 
                 us all. We've been working on our mission since 2019, and since then, we've gathered 
@@ -410,9 +336,9 @@ $(document).ready(function(){
             </div>
     </div>
 
-    <div class="flex grid items-center grid-cols-2 mx-10 my-10 border-2 border-teal-900 rounded-full shadow-xl sm:pl-10 sm:ml-5 justify-items-center bg-lteal row">
+    <div class="flex grid items-center grid-cols-2 mx-10 my-10 border-2 border-teal-900 shadow-xl sm:pl-10 sm:ml-5 justify-items-center bg-lteal row">
         <!--left side-->    
-        <div class="col-auto px-8 py-10 text-2xl rounded-full font-body column ">
+        <div class="col-auto px-8 py-10 text-2xl font-body column ">
                 We are a nonprofit based in San Jose, California. Started by high school students, we 
                 strive to create intelligent infographics to spread awareness about health that affect 
                 us all. We've been working on our mission since 2019, and since then, we've gathered 
@@ -421,7 +347,7 @@ $(document).ready(function(){
             
         <!--right side-->
             <div class="w-full h-full">
-            <div class="flex items-center justify-center h-full col-auto px-8 text-6xl font-extrabold text-center text-white rounded-full font-body column border-lteal border-2xl bg-ddteal">
+            <div class="flex items-center justify-center h-full col-auto px-8 text-6xl font-extrabold text-center text-white font-body column border-lteal border-2xl bg-ddteal">
             meet the team
             </div>
             </div>
