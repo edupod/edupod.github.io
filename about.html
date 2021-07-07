@@ -190,7 +190,7 @@ $(".elm").hover(
 </header>
         
 
-    <script>
+     <script>
         //script to shrink navbar on scroll
 
         var num = 80; //number of pixels before modifying styles
@@ -201,70 +201,18 @@ $(".elm").hover(
         if (y > 100) {
         $('.navbar').fadeIn();
         } else {
-        $('.navbar').fadeOut(duration='2');          
+        $('.navbar').fadeOut(10);          
         }});
         
-        $(".elm").hover(
-        function(){ $(this).addClass('hover') },
-        function(){ $(this).removeClass('hover') }
-        )
-        
+
         $(window).bind('scroll', function () {
-            if ($(window).scrollTop() > num) {
-                $('.navbar').addClass('fixed');
-                $('.navbar').animate({
-                    width: '50%' [30]
-                });
+            if ($(window).scrollTop() > num) { 
+            $('.navbar').addClass('fixed');
+
             } else {
-                $('.navbar').removeClass('fixed');
-                $('.navbar').animate({
-                    width: '100%' [30]
-                })
+
             }
         });
-        jQuery('document').ready(function () {
-            if (jQuery('.right').length) {
-
-                jQuery(window).scroll(function () {
-                    var win_width = jQuery(window).width();
-                    if (win_width > 1200) {
-                        var topoffset = jQuery('.right').offset().top;
-                        var leftoffset = jQuery('.right').offset().left;
-
-                        var botoffset = jQuery('footer').offset().top;
-
-                        var block_height = jQuery('.floating-block').height();
-                        botoffset = botoffset - block_height - 250;
-                        topoffset = topoffset - 200;
-
-                        var sTop = jQuery(window).scrollTop();
-
-                        var top_fix_to_abs = botoffset - topoffset;
-                        if (sTop < topoffset) {
-                            jQuery('.floating-block').removeClass('curr_fix');
-                            jQuery('.floating-block').removeClass('right_fix');
-                            jQuery('.floating-block').css('top', "");
-                            jQuery('.floating-block').css('left', "");
-                            console.log('h1');
-                        }
-                        if (sTop > topoffset && sTop < botoffset) {
-                            jQuery('.floating-block').addClass('curr_fix');
-                            jQuery('.floating-block').addClass('right_fix').css('left', leftoffset);
-                            jQuery('.floating-block').css('top', "");
-                            console.log('h2');
-                        }
-                        if (sTop >= botoffset && sTop > topoffset) {
-                            jQuery('.floating-block').removeClass('curr_fix');
-                            jQuery('.floating-block').css('left', 0);
-                            jQuery('.floating-block').css('top', top_fix_to_abs);
-                            console.log('h3');
-                            //return;
-
-                        }
-                    }
-                });
-            }
-});
     </script>
     <nav style="z-index: 10000;"
         class="container top-0 flex w-10/12 p-2 pr-0 mt-0 ml-0 mr-10 bg-white bg-opacity-25 border-2 shadow-2xl justify-evenly overflow-clip md:mt-3 md:mx-5 md:pr-10 md:w-max pb-7 navbar"
