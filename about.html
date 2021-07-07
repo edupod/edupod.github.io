@@ -32,7 +32,7 @@
             });
         });
         $(document).ready(function() {
-        $('.menu').fadeOut(1);
+        $('.navbar').fadeOut(1);
     });
     </script>
     <title>edupod - a student-led nonprofit</title>
@@ -199,9 +199,9 @@ $(".elm").hover(
         $(document).scroll(function() {
         var y = $(this).scrollTop();
         if (y > 100) {
-        $('.menu').fadeIn();
+        $('.navbar').fadeIn();
         } else {
-        $('.menu').fadeOut(duration='2');          
+        $('.navbar').fadeOut(duration='2');          
         }});
         
         $(".elm").hover(
@@ -211,13 +211,13 @@ $(".elm").hover(
         
         $(window).bind('scroll', function () {
             if ($(window).scrollTop() > num) {
-                $('.menu').addClass('fixed');
-                $('.menu').animate({
+                $('.navbar').addClass('fixed');
+                $('.navbar').animate({
                     width: '50%' [30]
                 });
             } else {
-                $('.menu').removeClass('fixed');
-                $('.menu').animate({
+                $('.navbar').removeClass('fixed');
+                $('.navbar').animate({
                     width: '100%' [30]
                 })
             }
@@ -266,16 +266,14 @@ $(".elm").hover(
             }
 });
     </script>
-     <nav style="z-index: 10000;"
-        class="top-0 flex justify-end w-full mr-10 bg-white bg-opacity-25 border-2 shadow-2xl md:pl-0 md:ml-10 md:p-2 md:pr-40 md:justify-center menu"
+    <nav style="z-index: 10000;"
+        class="container top-0 flex w-10/12 p-2 pr-0 mt-0 ml-0 mr-10 bg-white bg-opacity-25 border-2 shadow-2xl justify-evenly overflow-clip md:mt-3 md:mx-5 md:pr-10 md:w-max pb-7 navbar"
         id="slider">
                 <img title="home page" src="images/ctrlogonopillsm.svg" 
-                    class="w-3/12 transition duration-500 ease-in-out border-2 border-teal-900 shadow-2xl bg-lteal lteal hover:bg-teal-800"
-                    />
-                </div>
-        <div class="flex flex-wrap items-center justify-center mx-auto ">
-            <div class="flex content-center justify-center w-full pt-2 md:justify-center ">
-                <ul class="flex items-center justify-center flex-1 list-reset md:flex-none ">
+                    class="items-center w-3/12 mr-0 transition duration-500 ease-in-out border-2 border-teal-900 shadow-2xl md:mr-12 bg-lteal lteal hover:bg-teal-800"/>
+        <div class="flex items-center justify-end w-auto ml-0 md:ml-20">
+            <div class="flex content-center justify-center w-auto pt-2 md:justify-center ">
+                <ul class="items-center justify-center flex-none mr-16 overflow-hidden">
                     <div class="flex items-center w-auto">
 
                     <li class="mr-3 ">
@@ -297,30 +295,25 @@ $(".elm").hover(
                                 visit our blog
                             </strong></a>
                     <li class="mr-3 ">
-                        <a class="flex justify-center inline-block px-3 py-3 transition duration-500 ease-in-out border-2 border-teal-900 shadow-xl text-ddteal bg-lteal hover:bg-teal-800 "
-                            href="#team "><strong>
+                        <a class="flex justify-center inline-block px-3 py-3 mr-12 transition duration-500 ease-in-out border-2 border-teal-900 shadow-xl md:mr-0 text-ddteal bg-lteal hover:bg-teal-800 "
+                            href="/about.html"><strong>
                                 meet
                                 the
                                 team
                             </strong></a>
                     </li>
                     </li>
-                    <li class="mr-3 ">
+                    <!--li class="mr-3 ">
                         <a class="flex justify-center inline-block px-3 py-3 transition duration-500 ease-in-out border-2 border-teal-900 shadow-xl text-ddteal bg-lteal hover:bg-teal-800 "
                             href="/pages/donate "><strong>
                                 donate
                             </strong></a>
-                    </li>
-                </ul>
+                    </li-->
+                    </div>
+            </ul>
+            </div>
             </div>
 
-        </div>
-        <!--ul class="flex items-center flex-1 list-reset md:flex-end ">
-            <li class="mr-3 ">
-                <a class="flex inline-block px-3 py-3 border-2 border-teal-900 text-ddteal " href="# ">to
-                            top</a>
-            </li>
-        </ul-->
     </nav>
 <figure class="items-center h-full p-8 px-20 mx-20 my-20 shadow-xl md:flex bg-dlteal md:p-0">
   <img class="w-32 h-32 px-10 mx-auto my-10 md:w-48 md:h-auto md:rounded-none" src="/images/khushboo_website_pic.webp" alt="" width="512" height="512">
